@@ -1,5 +1,5 @@
 
-# Webtrees 2 Custom Module: ⚶ Vesta Families
+# ⚶ Vesta Families (Webtrees 2 Custom Module)
 
 This [webtrees](https://www.webtrees.net/) custom module provides an extended 'Families' tab, with hooks for other custom modules.
 The project’s website is [cissee.de](https://cissee.de).
@@ -26,7 +26,7 @@ Mainly intended as a base for other custom modules. One feature is available ind
 * Requires the ⚶ Vesta Common module ('vesta_common').
 * Download the zipped module, including all related modules, [here](https://cissee.de/vesta.latest.zip).
 * Support, suggestions, feature requests: <ric@richard-cissee.de>
-* Issues also via <https://github.com/ric2016/relatives_with_hooks/issues>
+* Issues also via <https://github.com/vesta-webtrees-2-custom-modules/vesta_relatives/issues>
 
 ### Installation<a name="installation"/>
 
