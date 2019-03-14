@@ -5,7 +5,6 @@ namespace Cissee\Webtrees\Module\Relatives;
 use Cissee\Webtrees\Hook\HookInterfaces\RelativesTabExtenderInterface;
 use Cissee\Webtrees\Hook\HookInterfaces\RelativesTabExtenderUtils;
 use Cissee\WebtreesExt\Module\RelativesTabModule_2x;
-use Cissee\WebtreesExt\ModuleView;
 use Fisharebest\Webtrees\Auth;
 use Fisharebest\Webtrees\Family;
 use Fisharebest\Webtrees\Http\Controllers\Admin\ModuleController;
@@ -15,7 +14,6 @@ use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use Fisharebest\Webtrees\Module\ModuleCustomInterface;
 use Fisharebest\Webtrees\Module\ModuleTabInterface;
 use Fisharebest\Webtrees\Services\ModuleService;
-use Fisharebest\Webtrees\Webtrees;
 use ReflectionObject;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -57,6 +55,27 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
 
   public function description(): string {
     return $this->getShortDescription();
+  }
+
+  /**
+   * Where does this module store its resources
+   *
+   * @return string
+   */
+  public function resourcesFolder(): string {
+    return __DIR__ . '/resources/';
+  }
+
+  /**
+   * Additional/updated translations.
+   *
+   * @param string $language
+   *
+   * @return string[]
+   */
+  public function customTranslations(string $language): array {
+    //TODO
+    return [];
   }
 
   public function tabTitle(): string {
@@ -162,7 +181,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
 
     RelativesTabExtenderUtils::updateOrder($this, $request);
 
-//private!
+    //private!
     //$controller1->updateAccessLevel($modules, RelativesTabExtenderInterface::class, $request);
 
     $method = $reflector->getMethod('updateAccessLevel');

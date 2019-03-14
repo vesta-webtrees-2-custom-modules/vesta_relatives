@@ -12,38 +12,39 @@ use Vesta\Model\PlaceStructure;
  * base impl of RelativesTabExtenderInterface
  */
 trait EmptyRelativesTabExtender {
-		
-		protected $relativesTabUIElementOrder = 0;
 
-		public function setRelativesTabUIElementOrder(int $order): void {
-			$this->relativesTabUIElementOrder = $order;
-		}
+  protected $relativesTabUIElementOrder = 0;
 
-		public function getRelativesTabUIElementOrder(): int {
-			return $this->relativesTabUIElementOrder ?? $this->defaultRelativesTabUIElementOrder();
-		}
+  public function setRelativesTabUIElementOrder(int $order): void {
+    $this->relativesTabUIElementOrder = $order;
+  }
 
-		public function defaultRelativesTabUIElementOrder(): int {
-			return 9999;
-		}
-		
-		public function hRelativesTabGetOutputBeforeTab(Individual $person) {
-			return new GenericViewElement('', '');
-		}
-	
-		public function hRelativesTabGetOutputAfterTab(Individual $person) {
-			return new GenericViewElement('', '');
-		}
-		
-		public function hRelativesTabGetOutputInDBox(Individual $person) {
-			return new GenericViewElement('', '');
-		}
-		
-		public function hRelativesTabGetOutputAfterDBox(Individual $person) {
-			return new GenericViewElement('', '');
-		}
-		
-		public function hRelativesTabGetOutputFamAfterSH(Family $family, $type) {
-			return new GenericViewElement('', '');
-		}
+  public function getRelativesTabUIElementOrder(): int {
+    return $this->relativesTabUIElementOrder ?? $this->defaultRelativesTabUIElementOrder();
+  }
+
+  public function defaultRelativesTabUIElementOrder(): int {
+    return 9999;
+  }
+
+  public function hRelativesTabGetOutputBeforeTab(Individual $person) {
+    return new GenericViewElement('', '');
+  }
+
+  public function hRelativesTabGetOutputAfterTab(Individual $person) {
+    return new GenericViewElement('', '');
+  }
+
+  public function hRelativesTabGetOutputInDBox(Individual $person) {
+    return new GenericViewElement('', '');
+  }
+
+  public function hRelativesTabGetOutputAfterDBox(Individual $person) {
+    return new GenericViewElement('', '');
+  }
+
+  public function hRelativesTabGetOutputFamAfterSH(Family $family, $type) {
+    return new GenericViewElement('', '');
+  }
+
 }
