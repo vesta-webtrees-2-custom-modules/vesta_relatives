@@ -21,7 +21,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Vesta\Model\GenericViewElement;
 use Vesta\VestaAdminController;
 use Vesta\VestaModuleTrait;
-use function app;
 use function route;
 use function view;
 
@@ -30,13 +29,17 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   use VestaModuleTrait;
   use RelativesTabModuleTrait;
 
-  public function __construct($directory) {
-    parent::__construct($directory);
+  protected $module_service;
 
-    //we do not want to use the original name 'modules/relatives/tab' here
-    $this->setViewName('tab');
+  public function __construct(ModuleService $module_service) {
+    $this->module_service = $module_service;
   }
-
+  
+  protected function onBoot(): void {
+    //we do not want to use the original name 'modules/relatives/tab' here, so we use our own namespace
+    $this->setViewName($this->name() . '::tab');
+  }
+  
   public function customModuleAuthorName(): string {
     return 'Richard Cissée';
   }
@@ -64,18 +67,6 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
    */
   public function resourcesFolder(): string {
     return __DIR__ . '/resources/';
-  }
-
-  /**
-   * Additional/updated translations.
-   *
-   * @param string $language
-   *
-   * @return string[]
-   */
-  public function customTranslations(string $language): array {
-    //TODO
-    return [];
   }
 
   public function tabTitle(): string {
@@ -169,7 +160,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   public function postProvidersAction(Request $request): Response {
     $modules = RelativesTabExtenderUtils::modules($this, true);
 
-    $controller1 = new ModuleController(app()->make(ModuleService::class));
+    $controller1 = new ModuleController($this->module_service);
     $reflector = new ReflectionObject($controller1);
 
     //private!

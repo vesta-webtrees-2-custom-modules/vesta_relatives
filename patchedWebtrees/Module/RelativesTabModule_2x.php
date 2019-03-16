@@ -2,7 +2,6 @@
 
 namespace Cissee\WebtreesExt\Module;
 
-use Cissee\WebtreesExt\ModuleView;
 use Fisharebest\Webtrees\Auth;
 use Fisharebest\Webtrees\Family;
 use Fisharebest\Webtrees\I18N;
@@ -17,13 +16,6 @@ class RelativesTabModule_2x extends AbstractModule implements ModuleTabInterface
   use ModuleTabTrait;
 
   protected $viewName = 'modules/relatives/tab';
-
-  /** @var string The directory where the module is installed */
-  protected $directory;
-
-  public function __construct($directory) {
-    $this->directory = $directory;
-  }
 
   public function setViewName($viewName) {
     $this->viewName = $viewName;
@@ -72,7 +64,7 @@ class RelativesTabModule_2x extends AbstractModule implements ModuleTabInterface
     $outputInDescriptionbox = $this->getOutputInDescriptionbox($individual);
     $outputAfterDescriptionbox = $this->getOutputAfterDescriptionbox($individual);
 
-    $view = ModuleView::make($this->directory, $this->viewName, [
+    $view = view($this->viewName, [
                 'fam_access_level' => $fam_access_level,
                 'can_edit' => $individual->canEdit(),
                 'individual' => $individual,

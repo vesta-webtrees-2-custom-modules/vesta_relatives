@@ -1,14 +1,7 @@
 <?php
+use Fisharebest\Webtrees\I18N;
+use Fisharebest\Webtrees\View;
 
-use Fisharebest\Webtrees\I18N; ?>
-<?php
-
-use Fisharebest\Webtrees\View; ?>
-<?php
-
-use Cissee\WebtreesExt\ModuleView; ?>
-
-<?php
 echo $outputBeforeTab->getMain();
 View::push('javascript');
 echo $outputBeforeTab->getScript();
@@ -67,7 +60,7 @@ View::endpush();
     <!-- Parents -->
     <?php foreach ($parent_families as $family): ?>
       <?=
-      ModuleView::make($this->module_directory, 'family', [
+      view($moduleName . '::family', [
           'individual' => $individual,
           'family' => $family,
           'type' => 'FAMC',
@@ -83,7 +76,7 @@ View::endpush();
     <!-- step-parents -->
     <?php foreach ($step_parent_families as $family): ?>
       <?=
-      ModuleView::make($this->module_directory, 'family', [
+      view($moduleName . '::family', [
           'individual' => $individual,
           'family' => $family,
           'type' => 'FAMC',
@@ -99,7 +92,7 @@ View::endpush();
     <!-- spouses -->
     <?php foreach ($spouse_families as $family): ?>
       <?=
-      ModuleView::make($this->module_directory, 'family', [
+      view($moduleName . '::family', [
           'individual' => $individual,
           'family' => $family,
           'type' => 'FAMS',
@@ -115,7 +108,7 @@ View::endpush();
     <!-- step-children -->
     <?php foreach ($step_child_familiess as $family): ?>
       <?=
-      ModuleView::make($this->module_directory, 'family', [
+      view($moduleName . '::family', [
           'individual' => $individual,
           'family' => $family,
           'type' => 'FAMS',

@@ -1,27 +1,14 @@
 <?php
 
-use Fisharebest\Webtrees\Date; ?>
-<?php
-
-use Fisharebest\Webtrees\Functions\Functions; ?>
-<?php
-
-use Fisharebest\Webtrees\Gedcom; ?>
-<?php
-
-use Fisharebest\Webtrees\GedcomTag; ?>
-<?php
-
-use Fisharebest\Webtrees\I18N; ?>
-<?php
-
-use Fisharebest\Webtrees\Individual; ?>
-<?php
-
-use Fisharebest\Webtrees\Module\ModuleThemeInterface; ?>
-<?php
-
-use Fisharebest\Webtrees\View; ?>
+use Fisharebest\Webtrees\Date;
+use Fisharebest\Webtrees\Functions\Functions;
+use Fisharebest\Webtrees\Gedcom;
+use Fisharebest\Webtrees\GedcomTag;
+use Fisharebest\Webtrees\I18N;
+use Fisharebest\Webtrees\Individual;
+use Fisharebest\Webtrees\Module\ModuleThemeInterface;
+use Fisharebest\Webtrees\View;
+?>
 
 <table class="table table-sm wt-facts-table">
     <caption>
@@ -58,7 +45,7 @@ use Fisharebest\Webtrees\View; ?>
                     <?= Functions::getCloseRelationshipName($individual, $person) ?>
                 </th>
                 <td class="border-0 p-0">
-                    <?= app()->make(ModuleThemeInterface::class)->individualBoxLarge($person) ?>
+                    <?= app(ModuleThemeInterface::class)->individualBoxLarge($person) ?>
                 </td>
             </tr>
             <?php
@@ -96,7 +83,7 @@ use Fisharebest\Webtrees\View; ?>
                     <?= Functions::getCloseRelationshipName($individual, $person) ?>
                 </th>
                 <td class="border-0 p-0">
-                    <?= app()->make(ModuleThemeInterface::class)->individualBoxLarge($person) ?>
+                    <?= app(ModuleThemeInterface::class)->individualBoxLarge($person) ?>
                 </td>
             </tr>
             <?php
@@ -209,7 +196,7 @@ use Fisharebest\Webtrees\View; ?>
                     <?= Functions::getCloseRelationshipName($individual, $person) ?>
                 </th>
                 <td class="border-0 p-0">
-                    <?= app()->make(ModuleThemeInterface::class)->individualBoxLarge($person) ?>
+                    <?= app(ModuleThemeInterface::class)->individualBoxLarge($person) ?>
                 </td>
             </tr>
             <?php

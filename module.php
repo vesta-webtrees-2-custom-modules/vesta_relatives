@@ -21,4 +21,4 @@ foreach (glob(WT_ROOT . $modulesPath . '*/autoload.php') as $autoloadFile) {
   require_once $autoloadFile;
 }
 
-return new RelativesTabModuleExtended(__DIR__);
+return app(RelativesTabModuleExtended::class);
