@@ -4,49 +4,17 @@ namespace Cissee\WebtreesExt\Module;
 
 use Fisharebest\Webtrees\Auth;
 use Fisharebest\Webtrees\Family;
-use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Individual;
-use Fisharebest\Webtrees\Module\AbstractModule;
-use Fisharebest\Webtrees\Module\ModuleTabInterface;
-use Fisharebest\Webtrees\Module\ModuleTabTrait;
+use Fisharebest\Webtrees\Module\RelativesTabModule;
 use Vesta\Model\GenericViewElement;
+use function view;
 
-class RelativesTabModule_2x extends AbstractModule implements ModuleTabInterface {
-
-  use ModuleTabTrait;
+class RelativesTabModule_2x extends RelativesTabModule {
 
   protected $viewName = 'modules/relatives/tab';
 
   public function setViewName($viewName) {
     $this->viewName = $viewName;
-  }
-
-  /**
-   * How should this module be labelled on tabs, menus, etc.?
-   *
-   * @return string
-   */
-  public function getTitle(): string {
-    return /* I18N: Name of a module */ I18N::translate('Families');
-  }
-
-  /**
-   * A sentence describing what this module does.
-   *
-   * @return string
-   */
-  public function getDescription(): string {
-    return /* I18N: Description of the “Families” module */ I18N::translate('A tab showing the close relatives of an individual.');
-  }
-
-  /**
-   * The user can re-arrange the tab order, but until they do, this
-   * is the order in which tabs are shown.
-   *
-   * @return int
-   */
-  public function defaultTabOrder(): int {
-    return 20;
   }
 
   /** {@inheritdoc} */
@@ -87,21 +55,6 @@ class RelativesTabModule_2x extends AbstractModule implements ModuleTabInterface
     ]);
 
     return $view;
-  }
-
-  /** {@inheritdoc} */
-  public function hasTabContent(Individual $individual): bool {
-    return true;
-  }
-
-  /** {@inheritdoc} */
-  public function isGrayedOut(Individual $individual): bool {
-    return false;
-  }
-
-  /** {@inheritdoc} */
-  public function canLoadAjax(): bool {
-    return false;
   }
 
   //[RC] override hooks

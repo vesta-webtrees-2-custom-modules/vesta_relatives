@@ -45,7 +45,7 @@ use Fisharebest\Webtrees\View;
                     <?= Functions::getCloseRelationshipName($individual, $person) ?>
                 </th>
                 <td class="border-0 p-0">
-                    <?= app(ModuleThemeInterface::class)->individualBoxLarge($person) ?>
+                    <?= view('chart-box', ['individual' => $person]) ?>
                 </td>
             </tr>
             <?php
@@ -83,7 +83,7 @@ use Fisharebest\Webtrees\View;
                     <?= Functions::getCloseRelationshipName($individual, $person) ?>
                 </th>
                 <td class="border-0 p-0">
-                    <?= app(ModuleThemeInterface::class)->individualBoxLarge($person) ?>
+                    <?= view('chart-box', ['individual' => $person]) ?>
                 </td>
             </tr>
             <?php
@@ -196,7 +196,7 @@ use Fisharebest\Webtrees\View;
                     <?= Functions::getCloseRelationshipName($individual, $person) ?>
                 </th>
                 <td class="border-0 p-0">
-                    <?= app(ModuleThemeInterface::class)->individualBoxLarge($person) ?>
+                    <?= view('chart-box', ['individual' => $person]) ?>
                 </td>
             </tr>
             <?php
