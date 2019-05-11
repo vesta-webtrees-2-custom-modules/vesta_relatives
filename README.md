@@ -4,6 +4,8 @@
 This [webtrees](https://www.webtrees.net/) custom module provides an extended 'Families' tab, with hooks for other custom modules.
 The project’s website is [cissee.de](https://cissee.de).
 
+This is a webtrees 2.x module - It cannot be used with webtrees 1.x. For its webtrees 1.x counterpart, see [here](https://github.com/ric2016/relatives_with_hooks).
+
 ## Contents
 
 * [Features](#features)
@@ -21,8 +23,8 @@ Mainly intended as a base for other custom modules. One feature is available ind
 
 ### Download<a name="download"/>
 
-* Current version: 2.0.0-beta.1.1
-* Based on and tested with webtrees 2.0.0-beta.1. Cannot be used with webtrees 1.x!
+* Current version: 2.0.0-beta.2.1
+* Based on and tested with webtrees 2.0.0-beta.2. Cannot be used with webtrees 1.x!
 * Requires the ⚶ Vesta Common module ('vesta_common').
 * Download the zipped module, including all related modules, [here](https://cissee.de/vesta.latest.zip).
 * Support, suggestions, feature requests: <ric@richard-cissee.de>
