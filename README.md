@@ -23,7 +23,7 @@ Mainly intended as a base for other custom modules. One feature is available ind
 
 ### Download<a name="download"/>
 
-* Current version: 2.0.0-beta.2.1
+* Current version: 2.0.0-beta.2.2
 * Based on and tested with webtrees 2.0.0-beta.2. Cannot be used with webtrees 1.x!
 * Requires the ⚶ Vesta Common module ('vesta_common').
 * Download the zipped module, including all related modules, [here](https://cissee.de/vesta.latest.zip).

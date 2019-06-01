@@ -18,7 +18,7 @@ class RelativesTabExtenderUtils {
     $order = Requests::getArray($request, 'order');
     //set als preference
     $pref = implode(',', $order);
-    $moduleForPrefsOrder->setPreference('ORDER', $pref);
+    $moduleForPrefsOrder->setPreference('ORDER_FAMILIES_TAB', $pref);
   }
 
   public static function accessibleModules(ModuleInterface $moduleForPrefsOrder, Tree $tree, UserInterface $user): Collection {
@@ -34,7 +34,7 @@ class RelativesTabExtenderUtils {
   }
 
   private static function sort(ModuleInterface $moduleForPrefsOrder, Collection $coll): Collection {
-    $pref = $moduleForPrefsOrder->getPreference('ORDER');
+    $pref = $moduleForPrefsOrder->getPreference('ORDER_FAMILIES_TAB');
     if ($pref === null) {
       $pref = '';
     }
