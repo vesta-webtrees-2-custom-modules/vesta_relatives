@@ -141,6 +141,15 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   }
 
   //////////////////////////////////////////////////////////////////////////////
+  
+  private function title1(): string {
+    return I18N::translate('Families Tab UI Element Providers');
+  }
+  
+  private function description1(): string {
+    return I18N::translate('Modules listed here may provide additional data for families (displayed in the configured order).');
+  }
+  
   //hook management - generalize?
   //adapted from ModuleController (e.g. listFooters)
   public function getProvidersAction(): ResponseInterface {
@@ -150,8 +159,8 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
     return $controller->listHooks(
                     $modules,
                     RelativesTabExtenderInterface::class,
-                    I18N::translate('Relatives Tab UI Element Providers'),
-                    '',
+                    $this->title1(),
+                    $this->description1(),
                     true,
                     true);
   }
@@ -198,14 +207,17 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
     ?>
     <div class="card-body">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-9">
                 <ul class="fa-ul">
                     <li>
                         <span class="fa-li"><?= view('icons/block') ?></span>
                         <a href="<?= e($url) ?>">
-                            <?= I18N::translate('Relatives Tab UI Element Providers') ?>
+                            <?= $this->title1() ?>
                         </a>
                         <?= view('components/badge', ['count' => $modules->count()]) ?>
+                        <p class="small text-muted">
+                          <?= $this->description1() ?>
+                        </p>
                     </li>
                 </ul>
             </div>
