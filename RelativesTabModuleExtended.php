@@ -14,12 +14,15 @@ use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use Fisharebest\Webtrees\Module\ModuleCustomInterface;
 use Fisharebest\Webtrees\Module\ModuleTabInterface;
 use Fisharebest\Webtrees\Services\ModuleService;
-use ReflectionObject;
+use Fisharebest\Webtrees\Services\TreeService;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use ReflectionObject;
 use Vesta\Model\GenericViewElement;
 use Vesta\VestaAdminController;
 use Vesta\VestaModuleTrait;
+use function app;
+use function redirect;
 use function route;
 use function view;
 
@@ -44,7 +47,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   }
 
   public function customModuleVersion(): string {
-    return '2.0.0-beta.4.1';
+    return '2.0.0-beta.5.1';
   }
 
   public function customModuleLatestVersionUrl(): string {
@@ -168,7 +171,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   public function postProvidersAction(ServerRequestInterface $request): ResponseInterface {
     $modules = RelativesTabExtenderUtils::modules($this, true);
 
-    $controller1 = new ModuleController($this->module_service);
+    $controller1 = new ModuleController($this->module_service, app(TreeService::class));
     $reflector = new ReflectionObject($controller1);
 
     //private!

@@ -1,4 +1,5 @@
 <?php
+use Fisharebest\Webtrees\Http\RequestHandlers\ReorderSpousesPage;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\View;
 
@@ -8,7 +9,7 @@ echo $outputBeforeTab->getScript();
 View::endpush();
 ?>
 
-<div class="wt-sources-tab py-4">
+<div class="wt-tab-relatives py-4">
     <table class="table table-sm wt-facts-table" role="presentation">
         <tbody>
             <tr>
@@ -36,19 +37,19 @@ View::endpush();
         </tbody>
     </table>
 
-    <?php if (empty($parent_families) && $can_edit) : ?>
+<?php if ($parent_families->isEmpty() && $can_edit) : ?>
       <table class="table table-sm wt-facts-table" role="presentation">
           <tbody>
               <tr>
                   <td>
-                      <a href="<?= e(route('add-parent-to-individual', ['ged' => $individual->tree()->name(), 'xref' => $individual->xref(), 'gender' => 'M'])) ?>">
+                    <a href="<?= e(route('add-parent-to-individual', ['tree' => $individual->tree()->name(), 'xref' => $individual->xref(), 'gender' => 'M'])) ?>">
                           <?= I18N::translate('Add a father') ?>
                       </a>
                   </td>
               </tr>
               <tr>
                   <td>
-                      <a href="<?= e(route('add-parent-to-individual', ['ged' => $individual->tree()->name(), 'xref' => $individual->xref(), 'gender' => 'F'])) ?>">
+                    <a href="<?= e(route('add-parent-to-individual', ['tree' => $individual->tree()->name(), 'xref' => $individual->xref(), 'gender' => 'F'])) ?>">
                           <?= I18N::translate('Add a mother') ?>
                       </a>
                   </td>
@@ -125,10 +126,11 @@ View::endpush();
       <br>
       <table class="table table-sm wt-facts-table" role="presentation">
           <tbody>
-              <?php if (count($spouse_families) > 1) : ?>
+            <?php if ($spouse_families->count() > 1) : ?>
                 <tr>
                     <td>
-                        <a href="<?= e(route('reorder-spouses', ['ged' => $individual->tree()->name(), 'xref' => $individual->xref()])) ?>">
+                        <a href="<?= e(route(ReorderSpousesPage::class, ['tree' => $individual->tree()->name(), 'xref' => $individual->xref()])) ?>">
+                            <?= view('icons/reorder') ?>
                             <?= I18N::translate('Re-order families') ?>
                         </a>
                     </td>
@@ -136,7 +138,7 @@ View::endpush();
               <?php endif ?>
               <tr>
                   <td>
-                      <a href="<?= e(route('link-child-to-family', ['ged' => $individual->tree()->name(), 'xref' => $individual->xref()])) ?>">
+                    <a href="<?= e(route('link-child-to-family', ['tree' => $individual->tree()->name(), 'xref' => $individual->xref()])) ?>">
                           <?= I18N::translate('Link this individual to an existing family as a child') ?>
                       </a>
                   </td>
@@ -144,7 +146,7 @@ View::endpush();
 
               <tr>
                   <td>
-                      <a href="<?= e(route('add-spouse-to-individual', ['ged' => $individual->tree()->name(), 'xref' => $individual->xref()])) ?>">
+                    <a href="<?= e(route('add-spouse-to-individual', ['tree' => $individual->tree()->name(), 'xref' => $individual->xref()])) ?>">
                           <?php if ($individual->sex() !== 'F') : ?>
                             <?= I18N::translate('Add a wife') ?>
                           <?php else : ?>
@@ -156,7 +158,7 @@ View::endpush();
 
               <tr>
                   <td>
-                      <a href="<?= e(route('link-spouse-to-individual', ['ged' => $individual->tree()->name(), 'xref' => $individual->xref()])) ?>">
+                    <a href="<?= e(route('link-spouse-to-individual', ['tree' => $individual->tree()->name(), 'xref' => $individual->xref()])) ?>">
                           <?php if ($individual->sex() !== 'F') : ?>
                             <?= I18N::translate('Add a wife using an existing individual') ?>
                           <?php else : ?>
@@ -168,7 +170,7 @@ View::endpush();
 
               <tr>
                   <td>
-                      <a href="<?= e(route('add-child-to-individual', ['ged' => $individual->tree()->name(), 'xref' => $individual->xref(), 'gender' => 'U'])) ?>">
+                    <a href="<?= e(route('add-child-to-individual', ['tree' => $individual->tree()->name(), 'xref' => $individual->xref(), 'gender' => 'U'])) ?>">
                           <?= I18N::translate('Add a child to create a one-parent family') ?>
                       </a>
                   </td>
