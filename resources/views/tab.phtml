@@ -27,15 +27,17 @@ View::endpush();
                     ?>
                 </td>
             </tr>
-            <?php
-            //[RC] PATCHED
-            echo $outputAfterDescriptionbox->getMain();
-            View::push('javascript');
-            echo $outputAfterDescriptionbox->getScript();
-            View::endpush();
-            ?>
         </tbody>
     </table>
+            
+            
+    <?php
+    //[RC] PATCHED
+    echo $outputAfterDescriptionbox->getMain();
+    View::push('javascript');
+    echo $outputAfterDescriptionbox->getScript();
+    View::endpush();
+    ?>
 
 <?php if ($parent_families->isEmpty() && $can_edit) : ?>
       <table class="table table-sm wt-facts-table" role="presentation">

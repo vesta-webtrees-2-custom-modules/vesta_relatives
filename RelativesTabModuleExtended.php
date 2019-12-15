@@ -36,10 +36,12 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   public function __construct(ModuleService $module_service) {
     $this->module_service = $module_service;
   }
-  
-  protected function onBoot(): void {
+
+  //assumes to get called after setName!
+  //(would be cleaner to set view name e.g. onBoot)
+  protected function getViewName(): string {
     //we do not want to use the original name 'modules/relatives/tab' here, so we use our own namespace
-    $this->setViewName($this->name() . '::tab');
+    return $this->name() . '::tab';
   }
   
   public function customModuleAuthorName(): string {
@@ -47,7 +49,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   }
 
   public function customModuleVersion(): string {
-    return '2.0.0-beta.5.1';
+    return '2.0.0.1';
   }
 
   public function customModuleLatestVersionUrl(): string {

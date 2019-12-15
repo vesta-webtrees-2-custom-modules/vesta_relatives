@@ -13,8 +13,8 @@ class RelativesTabModule_2x extends RelativesTabModule {
 
   protected $viewName = 'modules/relatives/tab';
 
-  public function setViewName($viewName) {
-    $this->viewName = $viewName;
+  protected function getViewName(): string {
+    return $this->viewName;
   }
 
   /** {@inheritdoc} */
@@ -32,7 +32,7 @@ class RelativesTabModule_2x extends RelativesTabModule {
     $outputInDescriptionbox = $this->getOutputInDescriptionbox($individual);
     $outputAfterDescriptionbox = $this->getOutputAfterDescriptionbox($individual);
 
-    $view = view($this->viewName, [
+    $view = view($this->getViewName(), [
                 'fam_access_level' => $fam_access_level,
                 'can_edit' => $individual->canEdit(),
                 'individual' => $individual,
