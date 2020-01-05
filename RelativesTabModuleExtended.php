@@ -5,6 +5,7 @@ namespace Cissee\Webtrees\Module\Relatives;
 use Cissee\Webtrees\Hook\HookInterfaces\RelativesTabExtenderInterface;
 use Cissee\Webtrees\Hook\HookInterfaces\RelativesTabExtenderUtils;
 use Cissee\WebtreesExt\Module\RelativesTabModule_2x;
+use Cissee\WebtreesExt\MoreI18N;
 use Fisharebest\Webtrees\Auth;
 use Fisharebest\Webtrees\Family;
 use Fisharebest\Webtrees\Http\Controllers\Admin\ModuleController;
@@ -38,7 +39,6 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   }
 
   //assumes to get called after setName!
-  //(would be cleaner to set view name e.g. onBoot)
   protected function getViewName(): string {
     //we do not want to use the original name 'modules/relatives/tab' here, so we use our own namespace
     return $this->name() . '::tab';
@@ -49,7 +49,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   }
 
   public function customModuleVersion(): string {
-    return '2.0.0.3';
+    return '2.0.1.1';
   }
 
   public function customModuleLatestVersionUrl(): string {
@@ -74,7 +74,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   }
 
   public function tabTitle(): string {
-    return $this->getTabTitle(I18N::translate('Families'));
+    return $this->getTabTitle(MoreI18N::xlate('Families'));
   }
 
   protected function getOutputBeforeTab(Individual $person) {
@@ -148,11 +148,11 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   //////////////////////////////////////////////////////////////////////////////
   
   private function title1(): string {
-    return I18N::translate('Families Tab UI Element Providers');
+    return /* I18N: Module Configuration */I18N::translate('Families Tab UI Element Providers');
   }
   
   private function description1(): string {
-    return I18N::translate('Modules listed here may provide additional data for families (displayed in the configured order).');
+    return /* I18N: Module Configuration */I18N::translate('Modules listed here may provide additional data for families (displayed in the configured order).');
   }
   
   //hook management - generalize?
