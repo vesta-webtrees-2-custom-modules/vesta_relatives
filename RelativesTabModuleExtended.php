@@ -49,7 +49,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   }
 
   public function customModuleVersion(): string {
-    return '2.0.1.1';
+    return '2.0.2.1';
   }
 
   public function customModuleLatestVersionUrl(): string {
