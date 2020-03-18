@@ -49,11 +49,11 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements Module
   }
 
   public function customModuleVersion(): string {
-    return '2.0.2.1';
+    return file_get_contents(__DIR__ . '/latest-version.txt');
   }
 
   public function customModuleLatestVersionUrl(): string {
-    return 'https://cissee.de';
+    return 'https://raw.githubusercontent.com/vesta-webtrees-2-custom-modules/vesta_relatives/master/latest-version.txt';
   }
 
   public function customModuleSupportUrl(): string {
