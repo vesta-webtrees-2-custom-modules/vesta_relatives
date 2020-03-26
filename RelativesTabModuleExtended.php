@@ -12,8 +12,11 @@ use Fisharebest\Webtrees\Http\Controllers\Admin\ModuleController;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Individual;
 use Fisharebest\Webtrees\Module\ModuleConfigInterface;
+use Fisharebest\Webtrees\Module\ModuleConfigTrait;
 use Fisharebest\Webtrees\Module\ModuleCustomInterface;
+use Fisharebest\Webtrees\Module\ModuleCustomTrait;
 use Fisharebest\Webtrees\Module\ModuleTabInterface;
+use Fisharebest\Webtrees\Module\ModuleTabTrait;
 use Fisharebest\Webtrees\Services\ModuleService;
 use Fisharebest\Webtrees\Services\TreeService;
 use Psr\Http\Message\ResponseInterface;
@@ -27,9 +30,20 @@ use function redirect;
 use function route;
 use function view;
 
-class RelativesTabModuleExtended extends RelativesTabModule_2x implements ModuleCustomInterface, ModuleConfigInterface, ModuleTabInterface {
+class RelativesTabModuleExtended extends RelativesTabModule_2x implements 
+  ModuleCustomInterface, 
+  ModuleConfigInterface, 
+  ModuleTabInterface {
 
-  use VestaModuleTrait;
+  use ModuleCustomTrait, ModuleConfigTrait, ModuleTabTrait, VestaModuleTrait {
+    VestaModuleTrait::customTranslations insteadof ModuleCustomTrait;
+    VestaModuleTrait::customModuleLatestVersion insteadof ModuleCustomTrait;
+    VestaModuleTrait::getAssetAction insteadof ModuleCustomTrait;
+    VestaModuleTrait::assetUrl insteadof ModuleCustomTrait;
+    
+    VestaModuleTrait::getConfigLink insteadof ModuleConfigTrait;
+  }
+  
   use RelativesTabModuleTrait;
 
   protected $module_service;
