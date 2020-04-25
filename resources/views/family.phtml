@@ -35,9 +35,9 @@ use Fisharebest\Webtrees\View;
           if ($person instanceof Individual) {
             $row_class = 'wt-gender-' . $person->sex();
             if ($fact->isPendingAddition()) {
-              $row_class .= ' new';
+                    $row_class .= ' wt-new';
             } elseif ($fact->isPendingDeletion()) {
-              $row_class .= ' old';
+                    $row_class .= ' wt-old';
             }
             ?>
             <tr class="<?= $row_class ?>">
@@ -72,9 +72,9 @@ use Fisharebest\Webtrees\View;
             $found |= !$fact->isPendingDeletion();
             $row_class = 'wt-gender-' . $person->sex();
             if ($fact->isPendingAddition()) {
-              $row_class .= ' new';
+                    $row_class .= ' wt-new';
             } elseif ($fact->isPendingDeletion()) {
-              $row_class .= ' old';
+                    $row_class .= ' wt-old';
             }
             ?>
 
@@ -91,7 +91,6 @@ use Fisharebest\Webtrees\View;
           }
         }
         if (!$found && $family->canEdit()) { ?>
-
           <tr>
               <th scope="row"></th>
               <td>
@@ -120,7 +119,9 @@ use Fisharebest\Webtrees\View;
 
           <tr class="<?= $row_class ?>">
               <th scope="row">
+                    <span class="sr-only"><?= GedcomTag::getLabel($fact->getTag()) ?></span>
               </th>
+
               <td>
                   <?= GedcomTag::getLabelValue($fact->getTag(), $fact->date()->display() . ' — ' . $fact->place()->fullName()) ?>
               </td>
@@ -136,7 +137,9 @@ use Fisharebest\Webtrees\View;
           ?>
           <tr>
               <th scope="row">
+                    <span class="sr-only"><?= I18N::translate('Marriage') ?></span>
               </th>
+
               <td>
                     <a href="<?= e(route(AddNewFact::class, ['tree' => $family->tree()->name(), 'xref' => $family->xref(), 'fact' => 'MARR'])) ?>">
                       <?= I18N::translate('Add marriage details') ?>
@@ -203,31 +206,33 @@ use Fisharebest\Webtrees\View;
             <?php
             $prev = $next;
           }
-        }
-        ?>
+        } ?>
 
         <?php if ($family->canEdit()): ?>
           <tr>
               <th scope="row">
-                    <?php if ($family->children()->count() > 1) : ?>
-                        <a href="<?= e(route(ReorderChildrenPage::class, ['tree' => $family->tree()->name(), 'xref' => $family->xref()])) ?>">
-                            <?= view('icons/reorder') ?>
-                            <?= I18N::translate('Re-order children') ?>
-                    </a>
-                  <?php endif; ?>
+                    <span class="sr-only"><?= I18N::translate('Children') ?></span>
               </th>
+
               <td>
+                    <a href="<?= e(route('add-child-to-family', ['gender' => 'M', 'tree' => $family->tree()->name(), 'xref' => $family->xref()])) ?>">
+                        <?= $type === 'FAMS' ? I18N::translate('Add a son') : I18N::translate('Add a brother') ?>
+                    </a>
+                    |
+                    <a href="<?= e(route('add-child-to-family', ['gender' => 'F', 'tree' => $family->tree()->name(), 'xref' => $family->xref()])) ?>">
+                        <?= $type === 'FAMS' ? I18N::translate('Add a daughter') : I18N::translate('Add a sister') ?>
+                    </a>
+                    |
                     <a href="<?= e(route('add-child-to-family', ['gender' => 'U', 'tree' => $family->tree()->name(), 'xref' => $family->xref()])) ?>">
-                        <?php if ($type === 'FAMS') : ?>
-                        <?= I18N::translate('Add a son or daughter') ?>
-                      <?php else: ?>
-                        <?= I18N::translate('Add a brother or sister') ?>
-                      <?php endif ?>
+                        <?= $type === 'FAMS' ? I18N::translate('Add a child') : I18N::translate('Add a sibling') ?>
                   </a>
 
-                    <a href="<?= e(route('add-child-to-family', ['gender' => 'M', 'tree' => $family->tree()->name(), 'xref' => $family->xref()])) ?>" class="icon-sex_m_15x15"></a>
-
-                    <a href="<?= e(route('add-child-to-family', ['gender' => 'F', 'tree' => $family->tree()->name(), 'xref' => $family->xref()])) ?>" class="icon-sex_f_15x15"></a>
+                    <?php if ($family->children()->count() > 1) : ?>
+                        <br>
+                        <a href="<?= e(route(ReorderChildrenPage::class, ['tree' => $family->tree()->name(), 'xref' => $family->xref()])) ?>">
+                            <?= I18N::translate('Re-order children') ?>
+                        </a>
+                    <?php endif; ?>
               </td>
           </tr>
         <?php endif ?>

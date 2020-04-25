@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
-"POT-Creation-Date: 2020-01-03 14:04+0100\n"
+"POT-Creation-Date: 2020-04-25 15:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,29 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: RelativesTabModuleExtended.php:134
+#: RelativesTabModuleExtended.php:150
 msgid "linkage challenged"
 msgstr ""
 
-#: RelativesTabModuleExtended.php:135
+#: RelativesTabModuleExtended.php:151
 msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
 msgstr ""
 
-#: RelativesTabModuleExtended.php:139
+#: RelativesTabModuleExtended.php:155
 msgid "linkage disproven"
 msgstr ""
 
-#: RelativesTabModuleExtended.php:140
+#: RelativesTabModuleExtended.php:156
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
 msgstr ""
 
 #. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:151
+#: RelativesTabModuleExtended.php:167
 msgid "Families Tab UI Element Providers"
 msgstr ""
 
 #. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:155
+#: RelativesTabModuleExtended.php:171
 msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
 msgstr ""
 
