@@ -19,11 +19,11 @@ Mainly intended as a base for other custom modules. One feature is available ind
 
 * Basic support for the GEDCOM child linkage status field (currently editable only via raw GEDCOM, this is a FAMC attribute which allows to mark family - child relations as challenged, proven or disproven):
 
-![Screenshot](linkage.png)
+<p align="center"><img src="linkage.png" alt="Screenshot" align="center" width="67%"></p>
 
 ### Download<a name="download"/>
 
-* Current version: 2.0.3.8
+* Current version: 2.0.3.10
 * Based on and tested with webtrees 2.0.3. Cannot be used with webtrees 1.x. May not work with earlier 2.x versions!
 * Requires the ⚶ Vesta Common module ('vesta_common').
 * Download the zipped module, including all related modules, [here](https://cissee.de/vesta.latest.zip).
