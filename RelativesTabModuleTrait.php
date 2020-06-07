@@ -2,11 +2,13 @@
 
 namespace Cissee\Webtrees\Module\Relatives;
 
+use Cissee\WebtreesExt\MoreI18N;
 use Fisharebest\Webtrees\I18N;
 use Vesta\ControlPanelUtils\Model\ControlPanelCheckbox;
 use Vesta\ControlPanelUtils\Model\ControlPanelPreferences;
 use Vesta\ControlPanelUtils\Model\ControlPanelSection;
 use Vesta\ControlPanelUtils\Model\ControlPanelSubsection;
+use Vesta\ModuleI18N;
 
 trait RelativesTabModuleTrait {
 
@@ -15,9 +17,11 @@ trait RelativesTabModuleTrait {
   }
 
   public function getShortDescription() {
-    return
-            I18N::translate('A tab showing the close relatives of an individual.') . ' ' .
-            I18N::translate('Replacement for the original \'Families\' module.');
+    $part2 = I18N::translate('Replacement for the original \'Families\' module.');
+    if (!$this->isEnabled()) {
+      $part2 = ModuleI18N::translate($this, $part2);
+    }
+    return MoreI18N::xlate('A tab showing the close relatives of an individual.') . ' ' . $part2;            
   }
 
   protected function getFullDescription() {

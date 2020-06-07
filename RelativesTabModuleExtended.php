@@ -16,7 +16,6 @@ use Fisharebest\Webtrees\Module\ModuleConfigTrait;
 use Fisharebest\Webtrees\Module\ModuleCustomInterface;
 use Fisharebest\Webtrees\Module\ModuleCustomTrait;
 use Fisharebest\Webtrees\Module\ModuleTabInterface;
-use Fisharebest\Webtrees\Module\ModuleTabTrait;
 use Fisharebest\Webtrees\Services\ModuleService;
 use Fisharebest\Webtrees\Services\TreeService;
 use Psr\Http\Message\ResponseInterface;
@@ -75,16 +74,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements
   public function customModuleSupportUrl(): string {
     return 'https://cissee.de';
   }
-
-  public function description(): string {
-    return $this->getShortDescription();
-  }
-
-  /**
-   * Where does this module store its resources
-   *
-   * @return string
-   */
+  
   public function resourcesFolder(): string {
     return __DIR__ . '/resources/';
   }

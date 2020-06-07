@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2020-04-25 15:19+0200\n"
-"PO-Revision-Date: 2020-06-07 13:21+0200\n"
+"PO-Revision-Date: 2020-06-07 19:33+0200\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,11 +49,11 @@ msgstr "Vesta Gezinnen"
 
 #: RelativesTabModuleTrait.php:19
 msgid "A tab showing the close relatives of an individual."
-msgstr "Een tabblad met de naaste verwanten van een individu."
+msgstr "Een tabblad met de naaste verwanten van een persoon."
 
 #: RelativesTabModuleTrait.php:20
 msgid "Replacement for the original 'Families' module."
-msgstr "Vervanging voor de originele module 'Gezinnen'."
+msgstr "Vervanging voor de oorspronkelijke module 'Gezinnen'."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:25
@@ -63,7 +63,7 @@ msgstr "Een uitgebreid tabblad 'Gezinnen', met 'hooks' voor andere aangepaste mo
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:26
 msgid "Intended as a replacement for the original 'Families' module."
-msgstr "Bedoeld als vervanging van de originele module 'Gezinnen'."
+msgstr "Bedoeld als vervanging van de oorspronkelijke module 'Gezinnen'."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:27
