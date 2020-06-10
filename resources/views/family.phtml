@@ -119,11 +119,11 @@ use Fisharebest\Webtrees\View;
 
           <tr class="<?= $row_class ?>">
               <th scope="row">
-                    <span class="sr-only"><?= GedcomTag::getLabel($fact->tag()) ?></span>
+                    <span class="sr-only"><?= GedcomTag::getLabel($fact->getTag()) ?></span>
               </th>
 
               <td>
-                  <?= GedcomTag::getLabelValue($fact->tag(), $fact->date()->display() . ' — ' . $fact->place()->fullName()) ?>
+                  <?= GedcomTag::getLabelValue($fact->getTag(), $fact->date()->display() . ' — ' . $fact->place()->fullName()) ?>
               </td>
           </tr>
 
