@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesta 1.0\n"
+"Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
+"POT-Creation-Date: 2020-04-25 15:19+0200\n"
+"PO-Revision-Date: 2020-06-22 21:07+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: Josef Prause <josef.prause@gmail.com>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"Language: cs\n"
+
+#: RelativesTabModuleExtended.php:150
+msgid "linkage challenged"
+msgstr "spojení čeká"
+
+#: RelativesTabModuleExtended.php:151
+msgid ""
+"Linking this child to this family is suspect, but the linkage has been "
+"neither proven nor disproven."
+msgstr ""
+"Připojení tohoto dítěte k této rodině je podezřelé, ale zatím není ani "
+"potvrzeno ani odmítnuto."
+
+#: RelativesTabModuleExtended.php:155
+msgid "linkage disproven"
+msgstr "spojení zamítnuto"
+
+#: RelativesTabModuleExtended.php:156
+msgid ""
+"There has been a claim by some that this child belongs to this family, but "
+"the linkage has been disproven."
+msgstr ""
+"Někdo prohlašuje, že toto dítě patří k této rodině, ale spojení bylo "
+"zamítnuto."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:167
+msgid "Families Tab UI Element Providers"
+msgstr "Families Tab UI Element Providers"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:171
+msgid ""
+"Modules listed here may provide additional data for families (displayed in "
+"the configured order)."
+msgstr ""
+"Moduly v tomto seznamu mohou poskytovat přídavné údaje k rodinám "
+"(zobrazeny v konfigurovaném pořadí)."
+
+#: RelativesTabModuleTrait.php:14
+msgid "Vesta Families"
+msgstr "Vesta Families"
+
+#: RelativesTabModuleTrait.php:19
+msgid "A tab showing the close relatives of an individual."
+msgstr "Záložka zobrazující blízké příbuzné osoby."
+
+#: RelativesTabModuleTrait.php:20
+msgid "Replacement for the original 'Families' module."
+msgstr "Náhrada za původní modul 'Rodiny'."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:25
+msgid "An extended 'Families' tab, with hooks for other custom modules."
+msgstr "Rozšířená záložka 'Rodiny' s háčky pro ostatní moduly."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:26
+msgid "Intended as a replacement for the original 'Families' module."
+msgstr "Zamýšlený jako náhrada ze původní modul 'Rodiny'."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:27
+#, php-format
+msgid "Requires the '%1$s Vesta Common' module."
+msgstr "Vyžaduje modul '%1$s Vesta Common'."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:34
+msgid "Displayed title"
+msgstr "Zobrazený název"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:36
+#, php-format
+msgid "Include the %1$s symbol in the module title"
+msgstr "Přidat symbol  %1$s do názvu modulu"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:41
+#, php-format
+msgid "Include the %1$s symbol in the tab title"
+msgstr "Přidat symbol  %1$s do názvu záložky"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:42
+msgid "Deselect in order to have the tab appear exactly as the original tab."
+msgstr "Potlačit, aby záložka vypadala stejně jako původní záložka."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:48
+msgid "General"
+msgstr "Všeobecné"
