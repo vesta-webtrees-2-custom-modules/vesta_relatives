@@ -83,6 +83,11 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements
     return $this->getTabTitle(MoreI18N::xlate('Families'));
   }
 
+  //there may be further ajax calls from this tab so we suggest to load tab itself via ajax
+  public function canLoadAjax(): bool {
+    return true;
+  }
+  
   protected function getOutputBeforeTab(Individual $person) {
     $pre = ''; //<link href="' . Webtrees::MODULES_PATH . basename($this->directory) . '/style.css" type="text/css" rel="stylesheet" />';
 
