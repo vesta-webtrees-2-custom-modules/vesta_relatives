@@ -7,93 +7,76 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
-"POT-Creation-Date: 2020-04-25 15:19+0200\n"
+"POT-Creation-Date: 2020-09-19 15:42+0200\n"
 "PO-Revision-Date: 2020-06-07 19:33+0200\n"
+"Last-Translator: TheDutchJewel <thedutchjewel@gmail.com>\n"
+"Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: TheDutchJewel <thedutchjewel@gmail.com>\n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.3.1\n"
 
-#: RelativesTabModuleExtended.php:150
-msgid "linkage challenged"
-msgstr "koppeling betwist"
-
-#: RelativesTabModuleExtended.php:151
-msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
-msgstr "Het koppelen van dit kind aan dit gezin is verdacht, maar de koppeling is niet bewezen noch weerlegd."
-
-#: RelativesTabModuleExtended.php:155
-msgid "linkage disproven"
-msgstr "koppeling weerlegd"
-
-#: RelativesTabModuleExtended.php:156
-msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
-msgstr "Sommigen beweren dat dit kind tot dit gezin behoort, maar de koppeling is weerlegd."
-
 #. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:167
-msgid "Families Tab UI Element Providers"
-msgstr "Aanbieders van UI-elementen voor tabblad Gezinnen"
-
-#. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:171
-msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
-msgstr "De hier vermelde modules kunnen aanvullende gegevens voor gezinnen opleveren (weergegeven in de geconfigureerde volgorde)."
-
-#: RelativesTabModuleTrait.php:14
-msgid "Vesta Families"
-msgstr "Vesta Gezinnen"
-
-#: RelativesTabModuleTrait.php:19
-msgid "A tab showing the close relatives of an individual."
-msgstr "Een tabblad met de naaste verwanten van een persoon."
-
-#: RelativesTabModuleTrait.php:20
-msgid "Replacement for the original 'Families' module."
-msgstr "Vervanging voor de oorspronkelijke module 'Gezinnen'."
-
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:25
+#: RelativesTabModuleTrait.php:30
 msgid "An extended 'Families' tab, with hooks for other custom modules."
 msgstr "Een uitgebreid tabblad 'Gezinnen', met 'hooks' voor andere aangepaste modules."
 
 #. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:26
+#: RelativesTabModuleExtended.php:162
+msgid "Families Tab UI Element Providers"
+msgstr "Aanbieders van UI-elementen voor tabblad Gezinnen"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:31
 msgid "Intended as a replacement for the original 'Families' module."
 msgstr "Bedoeld als vervanging van de oorspronkelijke module 'Gezinnen'."
 
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:27
-#, php-format
-msgid "Requires the '%1$s Vesta Common' module."
-msgstr "Vereist de module '%1$s Vesta Algemeen'."
+#: RelativesTabModuleExtended.php:146
+msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
+msgstr "Het koppelen van dit kind aan dit gezin is verdacht, maar de koppeling is niet bewezen noch weerlegd."
 
 #. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:34
-msgid "Displayed title"
-msgstr "Weergegeven titel"
+#: RelativesTabModuleExtended.php:166
+msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
+msgstr "De hier vermelde modules kunnen aanvullende gegevens voor gezinnen opleveren (weergegeven in de geconfigureerde volgorde)."
 
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:36
-#, php-format
-msgid "Include the %1$s symbol in the module title"
-msgstr "Het %1$s-symbool opnemen in de moduletitel"
+#: RelativesTabModuleTrait.php:21
+msgid "Replacement for the original 'Families' module."
+msgstr "Vervanging voor de oorspronkelijke module 'Gezinnen'."
 
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:41
-#, php-format
-msgid "Include the %1$s symbol in the tab title"
-msgstr "Het %1$s-symbool opnemen in de titel van het tabblad"
+#: RelativesTabModuleExtended.php:151
+msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
+msgstr "Sommigen beweren dat dit kind tot dit gezin behoort, maar de koppeling is weerlegd."
 
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:42
-msgid "Deselect in order to have the tab appear exactly as the original tab."
-msgstr "Schakel de selectie uit om de naam van het oorspronkelijke tabblad te blijven gebruiken."
+#: RelativesTabModuleExtended.php:145
+msgid "linkage challenged"
+msgstr "koppeling betwist"
 
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:48
-msgid "General"
-msgstr "Algemeen"
+#: RelativesTabModuleExtended.php:150
+msgid "linkage disproven"
+msgstr "koppeling weerlegd"
+
+#~ msgid "A tab showing the close relatives of an individual."
+#~ msgstr "Een tabblad met de naaste verwanten van een persoon."
+
+#~ msgid "Deselect in order to have the tab appear exactly as the original tab."
+#~ msgstr "Schakel de selectie uit om de naam van het oorspronkelijke tabblad te blijven gebruiken."
+
+#~ msgid "Displayed title"
+#~ msgstr "Weergegeven titel"
+
+#~ msgid "General"
+#~ msgstr "Algemeen"
+
+#~ msgid "Include the %1$s symbol in the module title"
+#~ msgstr "Het %1$s-symbool opnemen in de moduletitel"
+
+#~ msgid "Include the %1$s symbol in the tab title"
+#~ msgstr "Het %1$s-symbool opnemen in de titel van het tabblad"
+
+#~ msgid "Requires the '%1$s Vesta Common' module."
+#~ msgstr "Vereist de module '%1$s Vesta Algemeen'."
+
+#~ msgid "Vesta Families"
+#~ msgstr "Vesta Gezinnen"

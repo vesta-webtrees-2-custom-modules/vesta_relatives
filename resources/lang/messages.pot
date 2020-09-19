@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
-"POT-Creation-Date: 2020-04-25 15:19+0200\n"
+"POT-Creation-Date: 2020-09-19 15:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,83 +17,42 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: RelativesTabModuleExtended.php:150
+#: RelativesTabModuleExtended.php:145
 msgid "linkage challenged"
 msgstr ""
 
-#: RelativesTabModuleExtended.php:151
+#: RelativesTabModuleExtended.php:146
 msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
 msgstr ""
 
-#: RelativesTabModuleExtended.php:155
+#: RelativesTabModuleExtended.php:150
 msgid "linkage disproven"
 msgstr ""
 
-#: RelativesTabModuleExtended.php:156
+#: RelativesTabModuleExtended.php:151
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
 msgstr ""
 
 #. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:167
+#: RelativesTabModuleExtended.php:162
 msgid "Families Tab UI Element Providers"
 msgstr ""
 
 #. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:171
+#: RelativesTabModuleExtended.php:166
 msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
 msgstr ""
 
-#: RelativesTabModuleTrait.php:14
-msgid "Vesta Families"
-msgstr ""
-
-#: RelativesTabModuleTrait.php:19
-msgid "A tab showing the close relatives of an individual."
-msgstr ""
-
-#: RelativesTabModuleTrait.php:20
+#: RelativesTabModuleTrait.php:21
 msgid "Replacement for the original 'Families' module."
 msgstr ""
 
 #. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:25
+#: RelativesTabModuleTrait.php:30
 msgid "An extended 'Families' tab, with hooks for other custom modules."
 msgstr ""
 
 #. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:26
+#: RelativesTabModuleTrait.php:31
 msgid "Intended as a replacement for the original 'Families' module."
-msgstr ""
-
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:27
-#, php-format
-msgid "Requires the '%1$s Vesta Common' module."
-msgstr ""
-
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:34
-msgid "Displayed title"
-msgstr ""
-
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:36
-#, php-format
-msgid "Include the %1$s symbol in the module title"
-msgstr ""
-
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:41
-#, php-format
-msgid "Include the %1$s symbol in the tab title"
-msgstr ""
-
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:42
-msgid "Deselect in order to have the tab appear exactly as the original tab."
-msgstr ""
-
-#. I18N: Module Configuration
-#: RelativesTabModuleTrait.php:48
-msgid "General"
 msgstr ""

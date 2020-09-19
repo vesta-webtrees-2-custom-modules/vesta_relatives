@@ -4,6 +4,7 @@ namespace Cissee\Webtrees\Module\Relatives;
 
 use Cissee\WebtreesExt\MoreI18N;
 use Fisharebest\Webtrees\I18N;
+use Vesta\CommonI18N;
 use Vesta\ControlPanelUtils\Model\ControlPanelCheckbox;
 use Vesta\ControlPanelUtils\Model\ControlPanelPreferences;
 use Vesta\ControlPanelUtils\Model\ControlPanelSection;
@@ -13,7 +14,7 @@ use Vesta\ModuleI18N;
 trait RelativesTabModuleTrait {
 
   protected function getMainTitle() {
-    return I18N::translate('Vesta Families');
+    return CommonI18N::titleVestaRelatives();
   }
 
   public function getShortDescription() {
@@ -28,28 +29,28 @@ trait RelativesTabModuleTrait {
     $description = array();
     $description[] = /* I18N: Module Configuration */I18N::translate('An extended \'Families\' tab, with hooks for other custom modules.');
     $description[] = /* I18N: Module Configuration */I18N::translate('Intended as a replacement for the original \'Families\' module.');
-    $description[] = /* I18N: Module Configuration */I18N::translate('Requires the \'%1$s Vesta Common\' module.', $this->getVestaSymbol());
+    $description[] = CommonI18N::requires1(CommonI18N::titleVestaCommon());
     return $description;
   }
 
   protected function createPrefs() {
     $generalSub = array();
     $generalSub[] = new ControlPanelSubsection(
-            /* I18N: Module Configuration */I18N::translate('Displayed title'),
+            CommonI18N::displayedTitle(),
             array(/*new ControlPanelCheckbox(                    
                 I18N::translate('Include the %1$s symbol in the module title', $this->getVestaSymbol()),
                 null,
                 'VESTA',
                 '1'),*/
         new ControlPanelCheckbox(
-                /* I18N: Module Configuration */I18N::translate('Include the %1$s symbol in the tab title', $this->getVestaSymbol()),
-                /* I18N: Module Configuration */I18N::translate('Deselect in order to have the tab appear exactly as the original tab.'),
+                CommonI18N::vestaSymbolInTabTitle(),
+                CommonI18N::vestaSymbolInTitle2(),
                 'VESTA_TAB',
                 '1')));
 
     $sections = array();
     $sections[] = new ControlPanelSection(
-            /* I18N: Module Configuration */I18N::translate('General'),
+            CommonI18N::general(),
             null,
             $generalSub);
 
