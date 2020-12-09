@@ -8,50 +8,59 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2020-09-19 15:42+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-12-09 11:29+0000\n"
+"Last-Translator: Thomas Rindal <thomas@rindal.net>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
+"vesta-webtrees-custom-modules/vesta-families/nb_NO/>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: RelativesTabModuleExtended.php:145
 msgid "linkage challenged"
-msgstr ""
+msgstr "kobling utfordret"
 
 #: RelativesTabModuleExtended.php:146
 msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
 msgstr ""
+"Å knytte dette barnet til denne familien er mistenkelig, men koblingen er "
+"verken bevist eller motbevist."
 
 #: RelativesTabModuleExtended.php:150
 msgid "linkage disproven"
-msgstr ""
+msgstr "kobling motbevist"
 
 #: RelativesTabModuleExtended.php:151
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
 msgstr ""
+"Det har vært et krav fra noen om at dette barnet tilhører denne familien, "
+"men koblingen har blitt motbevist."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:162
 msgid "Families Tab UI Element Providers"
-msgstr ""
+msgstr "Leverandører av brukergrensesnittelement for familier"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:166
 msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
 msgstr ""
+"Moduler som er oppført her, kan gi flere data for familier (vises i den "
+"konfigurerte rekkefølgen)."
 
 #: RelativesTabModuleTrait.php:21
 msgid "Replacement for the original 'Families' module."
-msgstr ""
+msgstr "Erstatning for den opprinnelige \"Familier\"-modulen."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:30
 msgid "An extended 'Families' tab, with hooks for other custom modules."
-msgstr ""
+msgstr "En utvidet «Familier-fane», med hooks for andre egendefinerte moduler."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:31
 msgid "Intended as a replacement for the original 'Families' module."
-msgstr ""
+msgstr "Ment som en erstatning for den opprinnelige \"Familier\"-modulen."
