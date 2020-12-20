@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesta 1.0\n"
+"Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
+"POT-Creation-Date: 2020-09-19 15:42+0200\n"
+"PO-Revision-Date: 2020-12-20 15:29+0000\n"
+"Last-Translator: ro-la <lacoros@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/"
+"vesta-webtrees-custom-modules/vesta-families/sk/>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4-dev\n"
+
+#: RelativesTabModuleExtended.php:145
+msgid "linkage challenged"
+msgstr "prepojenie neisté"
+
+#: RelativesTabModuleExtended.php:146
+msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
+msgstr ""
+
+#: RelativesTabModuleExtended.php:150
+msgid "linkage disproven"
+msgstr ""
+
+#: RelativesTabModuleExtended.php:151
+msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:162
+msgid "Families Tab UI Element Providers"
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:166
+msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
+msgstr ""
+
+#: RelativesTabModuleTrait.php:21
+msgid "Replacement for the original 'Families' module."
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:30
+msgid "An extended 'Families' tab, with hooks for other custom modules."
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:31
+msgid "Intended as a replacement for the original 'Families' module."
+msgstr ""
