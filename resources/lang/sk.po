@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2020-09-19 15:42+0200\n"
-"PO-Revision-Date: 2020-12-20 15:29+0000\n"
+"PO-Revision-Date: 2020-12-21 09:29+0000\n"
 "Last-Translator: ro-la <lacoros@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/"
 "vesta-webtrees-custom-modules/vesta-families/sk/>\n"
@@ -26,6 +26,8 @@ msgstr "prepojenie neisté"
 #: RelativesTabModuleExtended.php:146
 msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
 msgstr ""
+"Pripojenie tohoto dieťaťa k rodine je otázne, zatiaľ nebolo ani potvrdené "
+"ani vyvrátené."
 
 #: RelativesTabModuleExtended.php:150
 msgid "linkage disproven"
