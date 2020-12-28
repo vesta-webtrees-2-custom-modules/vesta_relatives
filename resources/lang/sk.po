@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2020-09-19 15:42+0200\n"
-"PO-Revision-Date: 2020-12-21 15:29+0000\n"
+"PO-Revision-Date: 2020-12-28 14:29+0000\n"
 "Last-Translator: ro-la <lacoros@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/"
 "vesta-webtrees-custom-modules/vesta-families/sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.4.1-dev\n"
 
 #: RelativesTabModuleExtended.php:145
 msgid "linkage challenged"
@@ -42,23 +42,25 @@ msgstr ""
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:162
 msgid "Families Tab UI Element Providers"
-msgstr ""
+msgstr "Moduly, ktoré poskytujú údaje pre záložku „Vesta rodiny“"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:166
 msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
 msgstr ""
+"Moduly v tomto zozname poskytujú dodatočné údaje o rodinách (zobrazované v "
+"konfigurovanom poradí)."
 
 #: RelativesTabModuleTrait.php:21
 msgid "Replacement for the original 'Families' module."
-msgstr ""
+msgstr "Náhrada za pôvodný modul „Rodiny“."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:30
 msgid "An extended 'Families' tab, with hooks for other custom modules."
-msgstr ""
+msgstr "Rozšírená záložka „Rodiny“ s háčikmi pre ďalšie moduly."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:31
 msgid "Intended as a replacement for the original 'Families' module."
-msgstr ""
+msgstr "Dá sa použiť ako náhrada pôvodného modulu „Rodiny“."
