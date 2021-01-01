@@ -23,7 +23,7 @@ Mainly intended as a base for other custom modules. One feature is available ind
 
 ### Download<a name="download"/>
 
-* Current version: 2.0.10.4.0
+* Current version: 2.0.10.5.0
 * Based on and tested with webtrees 2.0.10. Requires webtrees 2.0.9 or later.
 * Requires the ⚶ Vesta Common module ('vesta_common').
 * Download the zipped module, including all related modules, [here](https://cissee.de/vesta.latest.zip).
@@ -40,10 +40,11 @@ Mainly intended as a base for other custom modules. One feature is available ind
 ### License<a name="license"/>
 
 * **vesta_relatives: a webtrees custom module**
-* Copyright (C) 2019 - 2020 Richard Cissée
+* Copyright (C) 2019 – 2021 Richard Cissée
 * Derived from **webtrees** - Copyright 2020 webtrees development team.
 * Dutch translations provided by TheDutchJewel.
 * Czech translations provided by Josef Prause.
+* Further translations contributed via weblate.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
