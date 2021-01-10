@@ -2,8 +2,8 @@
 
 namespace Cissee\Webtrees\Module\Relatives;
 
-use Cissee\Webtrees\Hook\HookInterfaces\RelativesTabExtenderInterface;
-use Cissee\Webtrees\Hook\HookInterfaces\RelativesTabExtenderUtils;
+use Vesta\Hook\HookInterfaces\RelativesTabExtenderInterface;
+use Vesta\Hook\HookInterfaces\RelativesTabExtenderUtils;
 use Cissee\WebtreesExt\Module\RelativesTabModule_2x;
 use Cissee\WebtreesExt\MoreI18N;
 use Fisharebest\Webtrees\Auth;
