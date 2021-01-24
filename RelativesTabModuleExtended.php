@@ -2,13 +2,11 @@
 
 namespace Cissee\Webtrees\Module\Relatives;
 
-use Vesta\Hook\HookInterfaces\RelativesTabExtenderInterface;
-use Vesta\Hook\HookInterfaces\RelativesTabExtenderUtils;
+use Cissee\WebtreesExt\Http\RequestHandlers\RelativesTabExtenderProvidersAction;
 use Cissee\WebtreesExt\Module\RelativesTabModule_2x;
 use Cissee\WebtreesExt\MoreI18N;
 use Fisharebest\Webtrees\Auth;
 use Fisharebest\Webtrees\Family;
-use Fisharebest\Webtrees\Http\Controllers\Admin\ModuleController;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Individual;
 use Fisharebest\Webtrees\Module\ModuleConfigInterface;
@@ -17,15 +15,13 @@ use Fisharebest\Webtrees\Module\ModuleCustomInterface;
 use Fisharebest\Webtrees\Module\ModuleCustomTrait;
 use Fisharebest\Webtrees\Module\ModuleTabInterface;
 use Fisharebest\Webtrees\Services\ModuleService;
-use Fisharebest\Webtrees\Services\TreeService;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use ReflectionObject;
+use Vesta\Hook\HookInterfaces\RelativesTabExtenderInterface;
+use Vesta\Hook\HookInterfaces\RelativesTabExtenderUtils;
 use Vesta\Model\GenericViewElement;
 use Vesta\VestaAdminController;
 use Vesta\VestaModuleTrait;
-use function app;
-use function redirect;
 use function route;
 use function view;
 
@@ -168,7 +164,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements
   
   //hook management - generalize?
   //adapted from ModuleController (e.g. listFooters)
-  public function getProvidersAction(): ResponseInterface {
+  public function getRelativesTabExtenderProvidersAction(): ResponseInterface {
     $modules = RelativesTabExtenderUtils::modules($this, true);
 
     $controller = new VestaAdminController($this->name());
@@ -181,34 +177,9 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements
                     true);
   }
 
-  public function postProvidersAction(ServerRequestInterface $request): ResponseInterface {
-    $modules = RelativesTabExtenderUtils::modules($this, true);
-
-    $controller1 = new ModuleController($this->module_service, app(TreeService::class));
-    $reflector = new ReflectionObject($controller1);
-
-    //private!
-    //$controller1->updateStatus($modules, $request);
-
-    $method = $reflector->getMethod('updateStatus');
-    $method->setAccessible(true);
-    $method->invoke($controller1, $modules, $request);
-
-    RelativesTabExtenderUtils::updateOrder($this, $request);
-
-    //private!
-    //$controller1->updateAccessLevel($modules, RelativesTabExtenderInterface::class, $request);
-
-    $method = $reflector->getMethod('updateAccessLevel');
-    $method->setAccessible(true);
-    $method->invoke($controller1, $modules, RelativesTabExtenderInterface::class, $request);
-
-    $url = route('module', [
-        'module' => $this->name(),
-        'action' => 'Providers'
-    ]);
-
-    return redirect($url);
+  public function postRelativesTabExtenderProvidersAction(ServerRequestInterface $request): ResponseInterface {
+    $controller = new RelativesTabExtenderProvidersAction($this);
+    return $controller->handle($request);
   }
 
   protected function editConfigBeforeFaq() {
@@ -216,7 +187,7 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements
 
     $url = route('module', [
         'module' => $this->name(),
-        'action' => 'Providers'
+        'action' => 'RelativesTabExtenderProviders'
     ]);
 
     //cf control-panel.phtml
