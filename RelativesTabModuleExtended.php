@@ -3,6 +3,8 @@
 namespace Cissee\Webtrees\Module\Relatives;
 
 use Cissee\WebtreesExt\Http\RequestHandlers\RelativesTabExtenderProvidersAction;
+use Cissee\WebtreesExt\Module\ModuleMetaInterface;
+use Cissee\WebtreesExt\Module\ModuleMetaTrait;
 use Cissee\WebtreesExt\Module\RelativesTabModule_2x;
 use Cissee\WebtreesExt\MoreI18N;
 use Fisharebest\Webtrees\Auth;
@@ -27,18 +29,19 @@ use function view;
 
 class RelativesTabModuleExtended extends RelativesTabModule_2x implements 
   ModuleCustomInterface, 
+  ModuleMetaInterface, 
   ModuleConfigInterface, 
   ModuleTabInterface {
 
   //must not use ModuleTabTrait here - already used in transitive superclass RelativesTabModule,
   //and - more importantly - partially implemented there! (supportedFacts)
-  use ModuleCustomTrait, ModuleConfigTrait, VestaModuleTrait {
+  use ModuleCustomTrait, ModuleMetaTrait, ModuleConfigTrait, VestaModuleTrait {
     VestaModuleTrait::customTranslations insteadof ModuleCustomTrait;
-    VestaModuleTrait::customModuleLatestVersion insteadof ModuleCustomTrait;
     VestaModuleTrait::getAssetAction insteadof ModuleCustomTrait;
-    VestaModuleTrait::assetUrl insteadof ModuleCustomTrait;
-    
+    VestaModuleTrait::assetUrl insteadof ModuleCustomTrait;    
     VestaModuleTrait::getConfigLink insteadof ModuleConfigTrait;
+    ModuleMetaTrait::customModuleVersion insteadof ModuleCustomTrait;
+    ModuleMetaTrait::customModuleLatestVersion insteadof ModuleCustomTrait;
   }
   
   use RelativesTabModuleTrait;
@@ -59,12 +62,12 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements
     return 'Richard Cissée';
   }
 
-  public function customModuleVersion(): string {
-    return file_get_contents(__DIR__ . '/latest-version.txt');
-  }
-
-  public function customModuleLatestVersionUrl(): string {
-    return 'https://raw.githubusercontent.com/vesta-webtrees-2-custom-modules/vesta_relatives/master/latest-version.txt';
+  public function customModuleMetaDatasJson(): string {
+    return file_get_contents(__DIR__ . '/metadata.json');
+  } 
+  
+  public function customModuleLatestMetaDatasJsonUrl(): string {
+    return 'https://raw.githubusercontent.com/vesta-webtrees-2-custom-modules/vesta_relatives/master/metadata.json';
   }
 
   public function customModuleSupportUrl(): string {
