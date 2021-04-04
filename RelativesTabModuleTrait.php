@@ -47,6 +47,16 @@ trait RelativesTabModuleTrait {
                 CommonI18N::vestaSymbolInTitle2(),
                 'VESTA_TAB',
                 '1')));
+    
+    $generalSub[] = new ControlPanelSubsection(
+            /* I18N: Module Configuration */I18N::translate('Initialization'),
+            array(
+        new ControlPanelCheckbox(
+                /* I18N: Module Configuration */I18N::translate('Load this tab dynamically'),
+                /* I18N: Module Configuration */I18N::translate('Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance.') . ' ' .
+                /* I18N: Module Configuration */I18N::translate('Deselect this option if you have other tabs which use this tab\'s content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected).'),
+                'CAN_LOAD_AJAX',
+                '1')));
 
     $sections = array();
     $sections[] = new ControlPanelSection(

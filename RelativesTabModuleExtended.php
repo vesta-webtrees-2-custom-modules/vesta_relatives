@@ -83,8 +83,10 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements
   }
 
   //there may be further ajax calls from this tab so we suggest to load tab itself via ajax
+  //on the other hand, other Tabs (i.e. the Album Tab) show all images from the entire page,
+  //so users may want to load this statically instead
   public function canLoadAjax(): bool {
-    return true;
+    return boolval($this->getPreference('CAN_LOAD_AJAX', '1'));
   }
   
   protected function getOutputBeforeTab(Individual $person) {
