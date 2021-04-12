@@ -14,5 +14,10 @@
 		"from": "2.0.12",
 		"to": "2.1",
 		"changelog": ["Configuration option to load tab immediately (which ensures its media files are always visible on other tabs, in particular the Album tab slideshow)."]
+	},
+	{
+		"version": "2.0.15.1.0",
+		"from": "2.0.12",
+		"to": "2.1"
 	}
 ]
