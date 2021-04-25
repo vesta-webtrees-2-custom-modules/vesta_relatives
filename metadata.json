@@ -2,27 +2,32 @@
 	{
 		"version": "2.0.13.0.0",
 		"from": "2.0.12",
-		"to": "2.1"
+		"to": "2.0.16"
 	},
 	{
 		"version": "2.0.13.1.0",
 		"from": "2.0.12",
-		"to": "2.1"
+		"to": "2.0.16"
 	},
 	{
 		"version": "2.0.15.0.0",
 		"from": "2.0.12",
-		"to": "2.1",
+		"to": "2.0.16",
 		"changelog": ["Configuration option to load tab immediately (which ensures its media files are always visible on other tabs, in particular the Album tab slideshow)."]
 	},
 	{
 		"version": "2.0.15.1.0",
 		"from": "2.0.12",
-		"to": "2.1"
+		"to": "2.0.16"
 	},
 	{
 		"version": "2.0.15.2.0",
 		"from": "2.0.12",
-		"to": "2.1"
+		"to": "2.0.16"
+	},
+	{
+		"version": "2.0.15.3.0",
+		"from": "2.0.12",
+		"to": "2.0.16"
 	}
 ]
