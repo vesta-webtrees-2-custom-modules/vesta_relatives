@@ -17,6 +17,10 @@ class RelativesTabModule_2x extends RelativesTabModule {
     return $this->viewName;
   }
 
+  protected function getFamilyViewName(): string {
+    return 'modules/relatives/family';
+  }
+  
   /** {@inheritdoc} */
   public function getTabContent(Individual $individual): string {
     $tree = $individual->tree();
@@ -41,12 +45,12 @@ class RelativesTabModule_2x extends RelativesTabModule {
                 'step_child_familiess' => $individual->spouseStepFamilies(),
                 'step_parent_families' => $individual->childStepFamilies(),
                 //[RC] additions
-                'moduleName' => $this->name(),
+                'familyViewName' => $this->getFamilyViewName(),
                 'outputFamilyAfterSubHeadersFunction' => function (Family $family, $type) {
-                  return $this->getOutputFamilyAfterSubHeaders($family, $type);
+                    return $this->getOutputFamilyAfterSubHeaders($family, $type);
                 },
                 'printFamilyChild' => function (Family $family, Individual $child) {
-                  return $this->printFamilyChild($family, $child);
+                    return $this->printFamilyChild($family, $child);
                 },
                 'outputBeforeTab' => $outputBeforeTab,
                 'outputAfterTab' => $outputAfterTab,

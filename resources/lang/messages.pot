@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
-"POT-Creation-Date: 2020-09-19 15:42+0200\n"
+"POT-Creation-Date: 2022-04-03 20:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,29 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: RelativesTabModuleExtended.php:145
+#: RelativesTabModuleExtended.php:159
 msgid "linkage challenged"
 msgstr ""
 
-#: RelativesTabModuleExtended.php:146
+#: RelativesTabModuleExtended.php:160
 msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
 msgstr ""
 
-#: RelativesTabModuleExtended.php:150
+#: RelativesTabModuleExtended.php:164
 msgid "linkage disproven"
 msgstr ""
 
-#: RelativesTabModuleExtended.php:151
+#: RelativesTabModuleExtended.php:165
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
 msgstr ""
 
 #. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:162
+#: RelativesTabModuleExtended.php:176
 msgid "Families Tab UI Element Providers"
 msgstr ""
 
 #. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:166
+#: RelativesTabModuleExtended.php:180
 msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
 msgstr ""
 
@@ -55,4 +55,24 @@ msgstr ""
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:31
 msgid "Intended as a replacement for the original 'Families' module."
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:52
+msgid "Initialization"
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:55
+msgid "Load this tab dynamically"
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:56
+msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:57
+msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
 msgstr ""

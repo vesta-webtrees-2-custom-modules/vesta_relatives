@@ -2,16 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vesta package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
-"POT-Creation-Date: 2020-09-19 15:42+0200\n"
+"POT-Creation-Date: 2022-04-03 20:23+0200\n"
 "PO-Revision-Date: 2021-07-21 03:32+0000\n"
 "Last-Translator: ngohuuthuanfc9865b89dde4baf <ngohuuthuan@gmail.com>\n"
-"Language-Team: Vietnamese <https://hosted.weblate.org/projects/"
-"vesta-webtrees-custom-modules/vesta-families/vi/>\n"
+"Language-Team: Vietnamese <https://hosted.weblate.org/projects/vesta-webtrees-custom-modules/vesta-families/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,48 +18,62 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.7.2-dev\n"
 
-#: RelativesTabModuleExtended.php:145
-msgid "linkage challenged"
-msgstr "kết nối có vấn đề"
-
-#: RelativesTabModuleExtended.php:146
-msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
-msgstr ""
-"Việc liên kết đứa trẻ này với gia đình này là điều đáng nghi ngờ, nhưng mối "
-"liên hệ chưa được chứng minh hay bác bỏ."
-
-#: RelativesTabModuleExtended.php:150
-msgid "linkage disproven"
-msgstr "liên kết bị bác bỏ"
-
-#: RelativesTabModuleExtended.php:151
-msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
-msgstr ""
-"Đã có một số người khẳng định rằng đứa trẻ này thuộc về gia đình này, nhưng "
-"mối liên hệ đã bị bác bỏ."
-
-#. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:162
-msgid "Families Tab UI Element Providers"
-msgstr "Nhà cung cấp phần tử giao diện người dùng tab Gia đình"
-
-#. I18N: Module Configuration
-#: RelativesTabModuleExtended.php:166
-msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
-msgstr ""
-"Các mô-đun được liệt kê ở đây có thể cung cấp dữ liệu bổ sung cho các gia "
-"đình (hiển thị theo thứ tự đã định cấu hình)."
-
-#: RelativesTabModuleTrait.php:21
-msgid "Replacement for the original 'Families' module."
-msgstr "Thay thế cho mô-đun 'Gia đình' ban đầu."
-
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:30
 msgid "An extended 'Families' tab, with hooks for other custom modules."
 msgstr "Tab 'Gia đình' mở rộng, với các móc cho các mô-đun tùy chỉnh khác."
 
 #. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:57
+msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:176
+msgid "Families Tab UI Element Providers"
+msgstr "Nhà cung cấp phần tử giao diện người dùng tab Gia đình"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:52
+msgid "Initialization"
+msgstr ""
+
+#. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:31
 msgid "Intended as a replacement for the original 'Families' module."
 msgstr "Dự định thay thế cho mô-đun 'Gia đình' ban đầu."
+
+#: RelativesTabModuleExtended.php:160
+msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
+msgstr "Việc liên kết đứa trẻ này với gia đình này là điều đáng nghi ngờ, nhưng mối liên hệ chưa được chứng minh hay bác bỏ."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:55
+msgid "Load this tab dynamically"
+msgstr ""
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:180
+msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
+msgstr "Các mô-đun được liệt kê ở đây có thể cung cấp dữ liệu bổ sung cho các gia đình (hiển thị theo thứ tự đã định cấu hình)."
+
+#: RelativesTabModuleTrait.php:21
+msgid "Replacement for the original 'Families' module."
+msgstr "Thay thế cho mô-đun 'Gia đình' ban đầu."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:56
+msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
+msgstr ""
+
+#: RelativesTabModuleExtended.php:165
+msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
+msgstr "Đã có một số người khẳng định rằng đứa trẻ này thuộc về gia đình này, nhưng mối liên hệ đã bị bác bỏ."
+
+#: RelativesTabModuleExtended.php:159
+msgid "linkage challenged"
+msgstr "kết nối có vấn đề"
+
+#: RelativesTabModuleExtended.php:164
+msgid "linkage disproven"
+msgstr "liên kết bị bác bỏ"

@@ -17,6 +17,7 @@ use Fisharebest\Webtrees\Module\ModuleCustomInterface;
 use Fisharebest\Webtrees\Module\ModuleCustomTrait;
 use Fisharebest\Webtrees\Module\ModuleTabInterface;
 use Fisharebest\Webtrees\Services\ModuleService;
+use Fisharebest\Webtrees\Webtrees;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Vesta\Hook\HookInterfaces\RelativesTabExtenderInterface;
@@ -55,7 +56,19 @@ class RelativesTabModuleExtended extends RelativesTabModule_2x implements
   //assumes to get called after setName!
   protected function getViewName(): string {
     //we do not want to use the original name 'modules/relatives/tab' here, so we use our own namespace
-    return $this->name() . '::tab';
+    if (str_starts_with(Webtrees::VERSION, '2.1')) {
+        return $this->name() . '::tab';
+    }
+    return $this->name() . '::tab_20';
+  }
+  
+  protected function getFamilyViewName(): string {
+    //we do not want to use the original name 'modules/relatives/family' here, so we use our own namespace
+    if (str_starts_with(Webtrees::VERSION, '2.1')) {
+        return $this->name() . '::family';
+    }  
+      
+    return $this->name() . '::family_20';
   }
   
   public function customModuleAuthorName(): string {

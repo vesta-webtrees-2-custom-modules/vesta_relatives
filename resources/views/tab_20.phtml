@@ -33,7 +33,7 @@ View::endpush();
             <tr>
                 <td>
                     <label>
-                        <input id="show-date-differences-rwh" type="checkbox" data-bs-toggle="collapse" data-bs-target=".wt-date-difference-rwh" data-wt-persist="date-differences-rwh">
+                        <input id="show-date-differences-rwh" type="checkbox" data-toggle="collapse" data-target=".wt-date-difference-rwh">
                         <?= I18N::translate('Date differences') ?>
                     </label>
                     <?php
@@ -209,6 +209,8 @@ View::endpush();
 
 <?php View::push('javascript') ?>
 <script>
-    webtrees.persistentToggle(document.querySelector('#show-date-differences-rwh'));
+  'use strict';
+
+  webtrees.persistentToggle('show-date-differences-rwh');
 </script>
 <?php View::endpush() ?>
