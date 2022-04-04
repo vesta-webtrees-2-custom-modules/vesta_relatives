@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2020-06-07 19:33+0200\n"
+"PO-Revision-Date: 2022-04-04 15:12+0000\n"
 "Last-Translator: TheDutchJewel <thedutchjewel@gmail.com>\n"
-"Language-Team: \n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/"
+"vesta-webtrees-custom-modules/vesta-families/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:30
@@ -26,6 +28,10 @@ msgstr "Een uitgebreid tabblad 'Gezinnen', met 'hooks' voor andere aangepaste mo
 #: RelativesTabModuleTrait.php:57
 msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
 msgstr ""
+"Deselecteer deze optie als u andere tabbladen hebt die de inhoud van dit "
+"tabblad gebruiken (zo toont het tabblad Album alle media van alle tabbladen "
+"in de diavoorstelling, en zal daarom beter werken als de selectie van deze "
+"optie is opgeheven)."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:176
@@ -35,7 +41,7 @@ msgstr "Aanbieders van UI-elementen voor tabblad Gezinnen"
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:52
 msgid "Initialization"
-msgstr ""
+msgstr "Initialisatie"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:31
@@ -49,7 +55,7 @@ msgstr "Het koppelen van dit kind aan dit gezin is verdacht, maar de koppeling i
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:55
 msgid "Load this tab dynamically"
-msgstr ""
+msgstr "Dit tabblad dynamisch laden"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:180
@@ -64,6 +70,9 @@ msgstr "Vervanging voor de oorspronkelijke module 'Gezinnen'."
 #: RelativesTabModuleTrait.php:56
 msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
 msgstr ""
+"Selecteer deze optie om de inhoud van het tabblad pas te laden als het "
+"tabblad daadwerkelijk is geselecteerd. Dit kan de algehele prestaties "
+"verbeteren."
 
 #: RelativesTabModuleExtended.php:165
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
