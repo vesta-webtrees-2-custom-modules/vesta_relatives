@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2021-05-13 10:31+0000\n"
-"Last-Translator: Продай Своё <ol810car@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/vesta-webtrees-custom-modules/vesta-families/ru/>\n"
+"PO-Revision-Date: 2022-04-05 07:39+0000\n"
+"Last-Translator: Олег <uolega@yandex.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/"
+"vesta-webtrees-custom-modules/vesta-families/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:30
@@ -27,6 +29,10 @@ msgstr "Расширенная вкладка \"Семьи\" с подключе
 #: RelativesTabModuleTrait.php:57
 msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
 msgstr ""
+"Снимите этот флажок, если у вас есть другие вкладки, которые используют "
+"содержимое этой вкладки (вкладка Альбом, в частности, отображает все "
+"медиафайлы со всех вкладок в слайд-шоу и, следовательно, будет лучше "
+"работать с этим параметром без выбора)."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:176
@@ -36,7 +42,7 @@ msgstr "Вкладка \"Семьи\" Поставщики элементов п
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:52
 msgid "Initialization"
-msgstr ""
+msgstr "Инициализация"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:31
@@ -50,7 +56,7 @@ msgstr "Связь этого ребенка с этой семьей подоз
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:55
 msgid "Load this tab dynamically"
-msgstr ""
+msgstr "Динамическая загрузка этой вкладки"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:180
@@ -65,6 +71,9 @@ msgstr "Замена оригинального модуля «Семьи»."
 #: RelativesTabModuleTrait.php:56
 msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
 msgstr ""
+"Выберите этот параметр, чтобы загружать содержимое вкладки только после "
+"того, как вкладка действительно выбрана. Это может повысить общую "
+"производительность."
 
 #: RelativesTabModuleExtended.php:165
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
