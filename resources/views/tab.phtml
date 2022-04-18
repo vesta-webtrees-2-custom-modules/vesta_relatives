@@ -33,7 +33,7 @@ View::endpush();
             <tr>
                 <td>
                     <label>
-                        <input id="show-date-differences-rwh" type="checkbox" data-bs-toggle="collapse" data-bs-target=".wt-date-difference-rwh" data-wt-persist="date-differences-rwh">
+                        <input id="show-date-differences-rwh" type="checkbox" data-bs-toggle="collapse" data-bs-target=".wt-date-difference-rwh" data-wt-persist="date-differences-rwh" autocomplete="off">
                         <?= I18N::translate('Date differences') ?>
                     </label>
                     <?php
@@ -209,6 +209,9 @@ View::endpush();
 
 <?php View::push('javascript') ?>
 <script>
+    <?php
+        //note: webtrees registers other persistentToggles via webtrees.js itself, but we must register explicitly if loaded within ajax!
+    ?>
     webtrees.persistentToggle(document.querySelector('#show-date-differences-rwh'));
 </script>
 <?php View::endpush() ?>
