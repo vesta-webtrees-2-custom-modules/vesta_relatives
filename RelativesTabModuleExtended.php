@@ -177,7 +177,7 @@ ModuleCustomInterface, ModuleMetaInterface, ModuleConfigInterface, ModuleTabInte
     public function getRelativesTabExtenderProvidersAction(): ResponseInterface {
         $modules = RelativesTabExtenderUtils::modules($this, true);
 
-        $controller = new VestaAdminController($this->name());
+        $controller = new VestaAdminController($this);
         return $controller->listHooks(
                 $modules,
                 RelativesTabExtenderInterface::class,
