@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2022-05-28 12:16+0000\n"
+"PO-Revision-Date: 2022-05-30 23:16+0000\n"
 "Last-Translator: Artem <artem@molotov.work>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/"
 "vesta-webtrees-custom-modules/vesta-families/uk/>\n"
@@ -29,6 +29,9 @@ msgstr "Розширена вкладка \"Сім'ї\" з гачками для
 #: RelativesTabModuleTrait.php:57
 msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
 msgstr ""
+"Зніміть цей прапорець, якщо у вас є інші вкладки, які використовують вміст "
+"цієї вкладки (на вкладці «Альбом», зокрема, відображаються всі медіафайли з "
+"усіх вкладок у слайд-шоу, тому краще працюватиме, коли параметр вимкнено)."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:176
@@ -67,6 +70,8 @@ msgstr "Заміна оригінального модуля \"Сім'ї\"."
 #: RelativesTabModuleTrait.php:56
 msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
 msgstr ""
+"Оберіть цей параметр, щоб завантажувати вміст вкладки лише після фактичного "
+"її вибору. Це може покращити загальну продуктивність."
 
 #: RelativesTabModuleExtended.php:165
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
