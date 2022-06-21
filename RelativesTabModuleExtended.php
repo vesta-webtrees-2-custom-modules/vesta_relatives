@@ -8,6 +8,7 @@ use Cissee\WebtreesExt\Module\ModuleMetaTrait;
 use Cissee\WebtreesExt\Module\RelativesTabModule_2x;
 use Cissee\WebtreesExt\MoreI18N;
 use Fisharebest\Webtrees\Auth;
+use Fisharebest\Webtrees\Elements\CustomFamilyEvent;
 use Fisharebest\Webtrees\Family;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Individual;
@@ -16,6 +17,7 @@ use Fisharebest\Webtrees\Module\ModuleConfigTrait;
 use Fisharebest\Webtrees\Module\ModuleCustomInterface;
 use Fisharebest\Webtrees\Module\ModuleCustomTrait;
 use Fisharebest\Webtrees\Module\ModuleTabInterface;
+use Fisharebest\Webtrees\Registry;
 use Fisharebest\Webtrees\Services\ModuleService;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -147,12 +149,13 @@ ModuleCustomInterface, ModuleMetaInterface, ModuleConfigInterface, ModuleTabInte
             if ($xref === $family->xref()) {
                 //check linkage status
                 $stat = $fact->attribute("STAT");
-                if ('challenged' === $stat) {
+                
+                if ('challenged' === strtolower($stat)) {
                     $text = I18N::translate('linkage challenged');
                     $title = I18N::translate('Linking this child to this family is suspect, but the linkage has been neither proven nor disproven.');
                     // Show warning triangle + text
                     echo '<div class="linkage small" title="' . $title . '">' . view('icons/warning') . $text . '</div>';
-                } else if ('disproven' === $stat) {
+                } else if ('disproven' === strtolower($stat)) {
                     $text = I18N::translate('linkage disproven');
                     $title = I18N::translate('There has been a claim by some that this child belongs to this family, but the linkage has been disproven.');
                     // Show warning triangle + text
@@ -162,6 +165,15 @@ ModuleCustomInterface, ModuleMetaInterface, ModuleConfigInterface, ModuleTabInte
         }
     }
 
+    public function onBoot(): void {
+        //allow a date on _NMR (TODO: webtrees issue for this)
+        $ef = Registry::elementFactory();
+        
+        $ef->registerTags([
+            'FAM:_NMR' => new CustomFamilyEvent(I18N::translate('Not married'), ['DATE' => '0:1', 'NOTE' => '0:M', 'SOUR' => '0:M']),
+            ]);
+    }
+    
     //////////////////////////////////////////////////////////////////////////////
 
     private function title1(): string {
