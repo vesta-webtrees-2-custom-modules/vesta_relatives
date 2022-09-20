@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesta 1.0\n"
+"Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
+"POT-Creation-Date: 2022-04-03 20:23+0200\n"
+"PO-Revision-Date: 2022-09-19 12:22+0000\n"
+"Last-Translator: Jose Antonio Corral <calducho@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/"
+"vesta-webtrees-custom-modules/vesta-families/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
+
+#: RelativesTabModuleExtended.php:159
+msgid "linkage challenged"
+msgstr "vinculación consultada"
+
+#: RelativesTabModuleExtended.php:160
+msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
+msgstr ""
+"La vinculación de este menor con esta familia está en duda, el vínculo no ha "
+"sido probado ni refutado."
+
+#: RelativesTabModuleExtended.php:164
+msgid "linkage disproven"
+msgstr "vinculación rechazada"
+
+#: RelativesTabModuleExtended.php:165
+msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
+msgstr ""
+"Algunos han afirmado que este menor pertenece a esta familia, pero el "
+"vínculo ha sido rechazado."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:176
+msgid "Families Tab UI Element Providers"
+msgstr "Pestaña de proveedores de elementos UI Familias"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:180
+msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
+msgstr ""
+"Los módulos enumerados aquí pueden proporcionar datos adicionales para las "
+"familias (que se muestran en el orden configurado)."
+
+#: RelativesTabModuleTrait.php:21
+msgid "Replacement for the original 'Families' module."
+msgstr "Reemplaza del módulo 'Familias' original."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:30
+msgid "An extended 'Families' tab, with hooks for other custom modules."
+msgstr ""
+"Una pestaña extendida de 'Familias', con hooks a otros módulos "
+"personalizados."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:31
+msgid "Intended as a replacement for the original 'Families' module."
+msgstr "Diseñado como un reemplazo para el módulo 'Familias' original."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:52
+msgid "Initialization"
+msgstr "Inicialización"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:55
+msgid "Load this tab dynamically"
+msgstr "Cargar esta pestaña dinámicamente"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:56
+msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
+msgstr ""
+"Seleccione esta opción para cargar/actualizar el contenido sólo cuando "
+"seleccione la pestaña. Esto puede mejorar el rendimiento general."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:57
+msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
+msgstr ""
+"Anule la selección de esta opción si otras pestañas que usan el contenido de "
+"esta (por ejemplo, la pestaña Álbum muestra todos los medios de todas las "
+"pestañas en la presentación de diapositivas y, por lo tanto, funcionará "
+"mejor con esta opción sin seleccionar)."
