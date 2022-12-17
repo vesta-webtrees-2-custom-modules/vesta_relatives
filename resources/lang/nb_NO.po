@@ -8,25 +8,29 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2021-04-19 11:26+0000\n"
-"Last-Translator: Eyolf Østrem <eyolf@oestrem.com>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/vesta-webtrees-custom-modules/vesta-families/nb_NO/>\n"
+"PO-Revision-Date: 2022-12-17 22:05+0000\n"
+"Last-Translator: H R Nilsen <hogne@visitusinmaputo.com>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
+"vesta-webtrees-custom-modules/vesta-families/nb_NO/>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:30
 msgid "An extended 'Families' tab, with hooks for other custom modules."
-msgstr "En utvidet «Familier»-fane, med hooks for andre egendefinerte moduler."
+msgstr "En utvidet fane «Familier», med hooks for andre egendefinerte moduler."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:57
 msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
 msgstr ""
+"Velg bort dette dersom du har andre faner som benytter denne fanens innhold ("
+"spesielt fanen Album viser alle media fra alle faner i bildefremvisning, og "
+"vil derfor fungere bedre ved å velge bort denne muligheten)."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:176
@@ -36,12 +40,12 @@ msgstr "Leverandører av brukergrensesnittelement for familier"
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:52
 msgid "Initialization"
-msgstr ""
+msgstr "Initialisering"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:31
 msgid "Intended as a replacement for the original 'Families' module."
-msgstr "Ment som en erstatning for den opprinnelige \"Familier\"-modulen."
+msgstr "Ment som en erstatning for den opprinnelige modulen \"Familier\"."
 
 #: RelativesTabModuleExtended.php:160
 msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
@@ -50,7 +54,7 @@ msgstr "Å knytte dette barnet til denne familien er tvilsomt, men koblingen er 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:55
 msgid "Load this tab dynamically"
-msgstr ""
+msgstr "Last denne fanen dynamisk"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:180
@@ -59,12 +63,14 @@ msgstr "Moduler som er oppført her, kan gi flere data for familier (vises i den
 
 #: RelativesTabModuleTrait.php:21
 msgid "Replacement for the original 'Families' module."
-msgstr "Erstatning for den opprinnelige «Familier»-modulen."
+msgstr "Erstatning for den opprinnelige modulen «Familier»."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:56
 msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
 msgstr ""
+"Velg dette for å laste fanens innhold kun når fanen faktisk åpnes. Dette vil "
+"kunne øke den totale ytelsen."
 
 #: RelativesTabModuleExtended.php:165
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
