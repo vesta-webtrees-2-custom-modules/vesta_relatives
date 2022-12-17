@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2022-12-17 22:05+0000\n"
+"PO-Revision-Date: 2022-12-18 00:50+0000\n"
 "Last-Translator: H R Nilsen <hogne@visitusinmaputo.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
 "vesta-webtrees-custom-modules/vesta-families/nb_NO/>\n"
@@ -35,7 +35,7 @@ msgstr ""
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:176
 msgid "Families Tab UI Element Providers"
-msgstr "Leverandører av brukergrensesnittelement for familier"
+msgstr "Kilde til brukergrensesnittelement for familier"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:52
