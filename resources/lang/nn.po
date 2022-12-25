@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesta 1.0\n"
+"Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
+"POT-Creation-Date: 2022-04-03 20:23+0200\n"
+"PO-Revision-Date: 2022-12-18 00:50+0000\n"
+"Last-Translator: H R Nilsen <hogne@visitusinmaputo.com>\n"
+"Language-Team: Norwegian Nynorsk <https://hosted.weblate.org/projects/"
+"vesta-webtrees-custom-modules/vesta-families/nn/>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15.1-dev\n"
+
+#: RelativesTabModuleExtended.php:159
+msgid "linkage challenged"
+msgstr "tvilsomt samband"
+
+#: RelativesTabModuleExtended.php:160
+msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
+msgstr ""
+"Å knyte dette barnet til denne familien er tvilsomt, men sambandet er korkje "
+"bekrefta eller avkrefta."
+
+#: RelativesTabModuleExtended.php:164
+msgid "linkage disproven"
+msgstr "samband tilbakevist"
+
+#: RelativesTabModuleExtended.php:165
+msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
+msgstr ""
+"Det er hevda at dette barnet høyrer til denne familien, men dette sambandet "
+"har blitt tilbakevist."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:176
+msgid "Families Tab UI Element Providers"
+msgstr "Kilde til brukargrensesnittelement for familiar"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:180
+msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
+msgstr ""
+"Modular oppførte her, kan gi fleire data for familiar (synt i konfigurert "
+"rekkefølge)."
+
+#: RelativesTabModuleTrait.php:21
+msgid "Replacement for the original 'Families' module."
+msgstr "Erstatning for den opphavelige modulen «Familier»."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:30
+msgid "An extended 'Families' tab, with hooks for other custom modules."
+msgstr ""
+"Ei utvida fane \"Familiar\", med hooks for andre eigendefinerte modular."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:31
+msgid "Intended as a replacement for the original 'Families' module."
+msgstr "Meint som erstatning for den opphavelige modulen \"Familiar\"."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:52
+msgid "Initialization"
+msgstr "Initialisering"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:55
+msgid "Load this tab dynamically"
+msgstr "Last denne fana dynamisk"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:56
+msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
+msgstr ""
+"Vel dette for å laste fana sitt innhald berre når fana faktisk opnast. Dette "
+"vil kunne auke den totale ytelsen."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:57
+msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
+msgstr ""
+"Vel bort dette dersom du har andre faner som nyttar denne fana sitt innhald ("
+"særskilt fana Album syner alle media frå alle faner i bileteframsyning, og "
+"vil då fungere betre ved å velje bort denne mogelegheita)."
