@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesta 1.0\n"
+"Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
+"POT-Creation-Date: 2022-04-03 20:23+0200\n"
+"PO-Revision-Date: 2023-11-20 14:02+0000\n"
+"Last-Translator: BernatBanyuls <bernatbanyuls@gmail.com>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/"
+"vesta-webtrees-custom-modules/vesta-families/ca/>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.2\n"
+
+#: RelativesTabModuleExtended.php:159
+msgid "linkage challenged"
+msgstr "Vinculació impugnada"
+
+#: RelativesTabModuleExtended.php:160
+msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
+msgstr ""
+"Vincular aquest nen amb aquesta família és sospitós, però el vincle no ha "
+"estat ni provat ni desmentit."
+
+#: RelativesTabModuleExtended.php:164
+msgid "linkage disproven"
+msgstr "Vinculació refutada"
+
+#: RelativesTabModuleExtended.php:165
+msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
+msgstr ""
+"Alguns han afirmat que aquest nen pertany a aquesta família, però el vincle "
+"ha estat desmentit."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:176
+msgid "Families Tab UI Element Providers"
+msgstr "Proveïdors d'elements d'interfície d'usuari de la pestanya famílies"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleExtended.php:180
+msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
+msgstr ""
+"Els mòduls enumerats aquí poden proporcionar dades addicionals per a les "
+"famílies (es mostren en l'ordre configurat)."
+
+#: RelativesTabModuleTrait.php:21
+msgid "Replacement for the original 'Families' module."
+msgstr "Substitució del mòdul original \"Famílies\"."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:30
+msgid "An extended 'Families' tab, with hooks for other custom modules."
+msgstr ""
+"Una pestanya \"Famílies\" ampliada, amb ganxos per a altres mòduls "
+"personalitzats."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:31
+msgid "Intended as a replacement for the original 'Families' module."
+msgstr "Pensat com a substitut del mòdul original \"Famílies\"."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:52
+msgid "Initialization"
+msgstr "Inicialització"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:55
+msgid "Load this tab dynamically"
+msgstr "Carregueu aquesta pestanya dinàmicament"
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:56
+msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
+msgstr ""
+"Seleccioneu aquesta opció per carregar el contingut de la pestanya només un "
+"cop seleccionada la pestanya. Això pot millorar el rendiment general."
+
+#. I18N: Module Configuration
+#: RelativesTabModuleTrait.php:57
+msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
+msgstr ""
+"Desseleccioneu aquesta opció si teniu altres pestanyes que utilitzen el "
+"contingut d'aquesta pestanya (la pestanya Àlbum en particular mostra tots "
+"els fitxers multimèdia de totes les pestanyes de la presentació de "
+"diapositives i, per tant, funcionarà millor amb aquesta opció "
+"desseleccionada)."
