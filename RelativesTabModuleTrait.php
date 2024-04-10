@@ -22,7 +22,7 @@ trait RelativesTabModuleTrait {
     if (!$this->isEnabled()) {
       $part2 = ModuleI18N::translate($this, $part2);
     }
-    return MoreI18N::xlate('A tab showing the close relatives of an individual.') . ' ' . $part2;            
+    return MoreI18N::xlate('A tab showing the close relatives of an individual.') . ' ' . $part2;
   }
 
   protected function getFullDescription() {
@@ -37,7 +37,7 @@ trait RelativesTabModuleTrait {
     $generalSub = array();
     $generalSub[] = new ControlPanelSubsection(
             CommonI18N::displayedTitle(),
-            array(/*new ControlPanelCheckbox(                    
+            array(/*new ControlPanelCheckbox(
                 I18N::translate('Include the %1$s symbol in the module title', $this->getVestaSymbol()),
                 null,
                 'VESTA',
@@ -47,7 +47,7 @@ trait RelativesTabModuleTrait {
                 CommonI18N::vestaSymbolInTitle2(),
                 'VESTA_TAB',
                 '1')));
-    
+
     $generalSub[] = new ControlPanelSubsection(
             /* I18N: Module Configuration */I18N::translate('Initialization'),
             array(

@@ -149,7 +149,7 @@ ModuleCustomInterface, ModuleMetaInterface, ModuleConfigInterface, ModuleTabInte
             if ($xref === $family->xref()) {
                 //check linkage status
                 $stat = $fact->attribute("STAT");
-                
+
                 if ('challenged' === strtolower($stat)) {
                     $text = I18N::translate('linkage challenged');
                     $title = I18N::translate('Linking this child to this family is suspect, but the linkage has been neither proven nor disproven.');
@@ -168,12 +168,12 @@ ModuleCustomInterface, ModuleMetaInterface, ModuleConfigInterface, ModuleTabInte
     public function onBoot(): void {
         //allow a date on _NMR (TODO: webtrees issue for this)
         $ef = Registry::elementFactory();
-        
+
         $ef->registerTags([
             'FAM:_NMR' => new CustomFamilyEvent(I18N::translate('Not married'), ['DATE' => '0:1', 'NOTE' => '0:M', 'SOUR' => '0:M']),
             ]);
     }
-    
+
     //////////////////////////////////////////////////////////////////////////////
 
     private function title1(): string {
@@ -231,7 +231,7 @@ ModuleCustomInterface, ModuleMetaInterface, ModuleConfigInterface, ModuleTabInte
                     </ul>
                 </div>
             </div>
-        </div>		
+        </div>
 
         <?php
     }

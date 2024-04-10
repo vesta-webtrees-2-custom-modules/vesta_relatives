@@ -20,7 +20,7 @@ class RelativesTabModule_2x extends RelativesTabModule {
   protected function getFamilyViewName(): string {
     return 'modules/relatives/family';
   }
-  
+
   /** {@inheritdoc} */
   public function getTabContent(Individual $individual): string {
     $tree = $individual->tree();
@@ -89,7 +89,7 @@ class RelativesTabModule_2x extends RelativesTabModule {
   }
 
   protected function printFamilyChild(Family $family, Individual $child) {
-    
+
   }
 
 }
