@@ -55,7 +55,7 @@ use Fisharebest\Webtrees\View;
                 <tr class="<?= $row_class ?>">
                     <th scope="row">
                         <?= $individual === $person ? '<i class="icon-selected"></i>' : '' ?>
-                        <?= app(RelationshipService::class)->getCloseRelationshipName($individual, $person) ?>
+                        <?= \Vesta\VestaUtils::get(RelationshipService::class)->getCloseRelationshipName($individual, $person) ?>
                     </th>
                     <td class="border-0 p-0">
                         <?= view('chart-box', ['individual' => $person]) ?>
@@ -93,7 +93,7 @@ use Fisharebest\Webtrees\View;
                 <tr class="<?= $row_class ?>">
                     <th scope="row">
                         <?= $individual === $person ? '<i class="icon-selected"></i>' : '' ?>
-                        <?= app(RelationshipService::class)->getCloseRelationshipName($individual, $person) ?>
+                        <?= \Vesta\VestaUtils::get(RelationshipService::class)->getCloseRelationshipName($individual, $person) ?>
                     </th>
                     <td class="border-0 p-0">
                         <?= view('chart-box', ['individual' => $person]) ?>
@@ -217,7 +217,7 @@ use Fisharebest\Webtrees\View;
                             </div>
                         <?php endif ?>
 
-                        <?= app(RelationshipService::class)->getCloseRelationshipName($individual, $person) ?>
+                        <?= \Vesta\VestaUtils::get(RelationshipService::class)->getCloseRelationshipName($individual, $person) ?>
                     </th>
                     <td class="border-0 p-0">
                         <?= view('chart-box', ['individual' => $person]) ?>
