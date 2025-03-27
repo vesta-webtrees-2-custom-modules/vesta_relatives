@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2025-03-24 15:08+0000\n"
+"PO-Revision-Date: 2025-03-27 05:01+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/"
 "vesta-webtrees-custom-modules/vesta-families/ta/>\n"
@@ -21,43 +21,50 @@ msgstr ""
 
 #: RelativesTabModuleExtended.php:159
 msgid "linkage challenged"
-msgstr ""
+msgstr "இணைப்பு அறைகூவல்"
 
 #: RelativesTabModuleExtended.php:160
 msgid "Linking this child to this family is suspect, but the linkage has been neither proven nor disproven."
 msgstr ""
+"இந்த குழந்தையை இந்த குடும்பத்துடன் இணைப்பது சந்தேகத்திற்குரியது, ஆனால் இணைப்பு "
+"நிரூபிக்கப்படவில்லை அல்லது நிரூபிக்கப்படவில்லை."
 
 #: RelativesTabModuleExtended.php:164
 msgid "linkage disproven"
-msgstr ""
+msgstr "இணைப்பு நிரூபிக்கப்படுகிறது"
 
 #: RelativesTabModuleExtended.php:165
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
 msgstr ""
+"இந்த குழந்தை இந்த குடும்பத்தைச் சேர்ந்தது என்று சிலரின் கூற்று வந்துள்ளது, ஆனால் இணைப்பு "
+"நிரூபிக்கப்பட்டுள்ளது."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:176
 msgid "Families Tab UI Element Providers"
-msgstr ""
+msgstr "குடும்பங்கள் தாவல் இடைமுகம் உறுப்பு வழங்குநர்கள்"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:180
 msgid "Modules listed here may provide additional data for families (displayed in the configured order)."
 msgstr ""
+"இங்கே பட்டியலிடப்பட்ட தொகுதிகள் குடும்பங்களுக்கு கூடுதல் தரவை வழங்கக்கூடும் (கட்டமைக்கப்பட்ட "
+"வரிசையில் காட்டப்படும்)."
 
 #: RelativesTabModuleTrait.php:21
 msgid "Replacement for the original 'Families' module."
-msgstr ""
+msgstr "அசல் 'குடும்பங்கள்' தொகுதிக்கு மாற்றாக."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:30
 msgid "An extended 'Families' tab, with hooks for other custom modules."
 msgstr ""
+"பிற தனிப்பயன் தொகுதிகளுக்கான கொக்கிகள் கொண்ட ஒரு நீட்டிக்கப்பட்ட 'குடும்பங்கள்' தாவல்."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:31
 msgid "Intended as a replacement for the original 'Families' module."
-msgstr ""
+msgstr "அசல் 'குடும்பங்கள்' தொகுதிக்கு மாற்றாக கருதப்படுகிறது."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:52
@@ -73,8 +80,13 @@ msgstr "இந்த தாவலை மாறும் வகையில் �
 #: RelativesTabModuleTrait.php:56
 msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
 msgstr ""
+"தாவல் உண்மையில் தேர்ந்தெடுக்கப்பட்டவுடன் மட்டுமே தாவல் உள்ளடக்கங்களை ஏற்ற இந்த விருப்பத்தைத் "
+"தேர்ந்தெடுக்கவும். இது ஒட்டுமொத்த செயல்திறனை மேம்படுத்தக்கூடும்."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:57
 msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
 msgstr ""
+"இந்த தாவலின் உள்ளடக்கத்தைப் பயன்படுத்தும் பிற தாவல்கள் உங்களிடம் இருந்தால் இந்த விருப்பத்தைத் "
+"தேர்வுசெய்க (குறிப்பாக ஆல்பம் தாவல் ச்லைடுசோவில் உள்ள அனைத்து தாவல்களிலிருந்தும் அனைத்து "
+"ஊடகங்களையும் காண்பிக்கும், எனவே இந்த விருப்பத்துடன் தேர்வுசெய்யப்பட்டால் சிறப்பாக செயல்படும்)."
