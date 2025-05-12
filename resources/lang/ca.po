@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2023-11-20 14:02+0000\n"
+"PO-Revision-Date: 2025-05-12 10:01+0000\n"
 "Last-Translator: BernatBanyuls <bernatbanyuls@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/"
 "vesta-webtrees-custom-modules/vesta-families/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.2\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: RelativesTabModuleExtended.php:159
 msgid "linkage challenged"
@@ -75,7 +75,7 @@ msgstr "Inicialització"
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:55
 msgid "Load this tab dynamically"
-msgstr "Carregueu aquesta pestanya dinàmicament"
+msgstr "Carrega aquesta pestanya dinàmicament"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:56
