@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2022-05-13 10:18+0000\n"
+"PO-Revision-Date: 2025-06-28 17:04+0000\n"
 "Last-Translator: ro-la <lacoros@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/"
 "vesta-webtrees-custom-modules/vesta-families/sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:30
@@ -28,6 +28,9 @@ msgstr "Rozšírená záložka „Rodiny“ s háčikmi pre ďalšie moduly."
 #: RelativesTabModuleTrait.php:57
 msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
 msgstr ""
+"Zrušte túto voľbu, ak používate záložky, ktoré využívajú obsah tejto záložky "
+"(konkrétne záložka album zobrazuje všetky médiá zo všetkých záložiek, a "
+"preto bude fungovať lepšie, ak táto voľba je zrušená)."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:176
@@ -66,6 +69,8 @@ msgstr "Náhrada za pôvodný modul „Rodiny“."
 #: RelativesTabModuleTrait.php:56
 msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
 msgstr ""
+"Zvoľte túto možnosť, ak sa má obsah záložky načítať až keď sa zvolí na "
+"zobrazenie. Toto môže zlepšiť celkový výkon."
 
 #: RelativesTabModuleExtended.php:165
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
