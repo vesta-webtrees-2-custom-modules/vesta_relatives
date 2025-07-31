@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2025-07-31 08:05+0000\n"
+"PO-Revision-Date: 2025-07-31 10:02+0000\n"
 "Last-Translator: TheDutchJewel <thedutchjewel@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/"
 "vesta-webtrees-custom-modules/vesta-families/nl/>\n"
@@ -23,8 +23,8 @@ msgstr ""
 #: RelativesTabModuleTrait.php:30
 msgid "An extended 'Families' tab, with hooks for other custom modules."
 msgstr ""
-"Een uitgebreid tabblad 'Gezinnen', met 'hooks' voor andere niet-"
-"standaardmodules."
+"Een uitgebreid tabblad 'Gezinnen', met 'hooks' voor andere "
+"uitbreidingsmodules."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:57
