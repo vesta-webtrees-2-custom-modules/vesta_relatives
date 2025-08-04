@@ -21,8 +21,8 @@ Mainly intended as a base for other custom modules. One feature is available ind
 
 ### Download<a name="download"/>
 
-* Current version: 2.2.3.0.0
-* Based on and tested with webtrees 2.2.3. Requires webtrees 2.2.1 or later.
+* Current version: 2.2.4.0.0
+* Based on and tested with webtrees 2.2.4. Requires webtrees 2.2.1 or later.
 * Requires the ⚶ Vesta Common module ('vesta_common').
 * Download the zip file, which includes all Vesta modules, [here](https://cissee.de/vesta.latest.zip).
 * Support, suggestions, feature requests: <ric@richard-cissee.de>
