@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: vesta 1.0\n"
 "Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
 "POT-Creation-Date: 2022-04-03 20:23+0200\n"
-"PO-Revision-Date: 2021-07-21 03:32+0000\n"
+"PO-Revision-Date: 2025-12-31 05:06+0000\n"
 "Last-Translator: ngohuuthuanfc9865b89dde4baf <ngohuuthuan@gmail.com>\n"
-"Language-Team: Vietnamese <https://hosted.weblate.org/projects/vesta-webtrees-custom-modules/vesta-families/vi/>\n"
+"Language-Team: Vietnamese <https://hosted.weblate.org/projects/vesta-"
+"webtrees-custom-modules/vesta-families/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.2-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:30
@@ -27,6 +28,9 @@ msgstr "Tab 'Gia đình' mở rộng, với các móc cho các mô-đun tùy ch�
 #: RelativesTabModuleTrait.php:57
 msgid "Deselect this option if you have other tabs which use this tab's content (the Album tab in particular displays all media from all tabs in the slideshow, and will therefore work better with this option deselected)."
 msgstr ""
+"Bỏ chọn tùy chọn này nếu bạn có các tab khác sử dụng nội dung của tab này "
+"(đặc biệt là tab Album hiển thị tất cả phương tiện từ tất cả các tab trong "
+"trình chiếu và do đó sẽ hoạt động tốt hơn khi tùy chọn này được bỏ chọn)."
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:176
@@ -36,7 +40,7 @@ msgstr "Nhà cung cấp phần tử giao diện người dùng tab Gia đình"
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:52
 msgid "Initialization"
-msgstr ""
+msgstr "Khởi tạo"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:31
@@ -50,7 +54,7 @@ msgstr "Việc liên kết đứa trẻ này với gia đình này là điều �
 #. I18N: Module Configuration
 #: RelativesTabModuleTrait.php:55
 msgid "Load this tab dynamically"
-msgstr ""
+msgstr "Tải tab động"
 
 #. I18N: Module Configuration
 #: RelativesTabModuleExtended.php:180
@@ -65,6 +69,8 @@ msgstr "Thay thế cho mô-đun 'Gia đình' ban đầu."
 #: RelativesTabModuleTrait.php:56
 msgid "Select this option in order to load the tab contents only once the tab is actually selected. This may improve the overall performance."
 msgstr ""
+"Chọn tùy chọn này để chỉ tải nội dung tab khi tab đã được chọn. Điều này có "
+"thể cải thiện hiệu suất tổng thể."
 
 #: RelativesTabModuleExtended.php:165
 msgid "There has been a claim by some that this child belongs to this family, but the linkage has been disproven."
